@@ -1,0 +1,138 @@
+[
+  {
+    "timestamp": "2026-06-02T11:15:38.725048",
+    "level": "info",
+    "step": "pipeline",
+    "message": "开始处理: data\\sales_data.csv",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.725235",
+    "level": "info",
+    "step": "load",
+    "message": "加载数据",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.744905",
+    "level": "success",
+    "step": "load",
+    "message": "完成 load",
+    "duration_ms": 19.666671752929688,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.745088",
+    "level": "info",
+    "step": "clean",
+    "message": "自动清洗数据",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.755191",
+    "level": "success",
+    "step": "clean",
+    "message": "完成 clean",
+    "duration_ms": 10.101079940795898,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.755310",
+    "level": "info",
+    "step": "quality",
+    "message": "检查数据质量",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.761160",
+    "level": "success",
+    "step": "quality",
+    "message": "完成 quality",
+    "duration_ms": 5.847930908203125,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.761279",
+    "level": "info",
+    "step": "stats",
+    "message": "提取统计特征",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.769945",
+    "level": "success",
+    "step": "stats",
+    "message": "完成 stats",
+    "duration_ms": 8.66389274597168,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.770053",
+    "level": "info",
+    "step": "insights",
+    "message": "生成数据洞察",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.793732",
+    "level": "success",
+    "step": "insights",
+    "message": "完成 insights",
+    "duration_ms": 23.67687225341797,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.793864",
+    "level": "info",
+    "step": "analysis",
+    "message": "多维度分析",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.826656",
+    "level": "success",
+    "step": "analysis",
+    "message": "完成 analysis",
+    "duration_ms": 32.78923034667969,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.826828",
+    "level": "info",
+    "step": "narrative",
+    "message": "分析叙事策略",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.827198",
+    "level": "success",
+    "step": "narrative",
+    "message": "完成 narrative",
+    "duration_ms": 0.3693103790283203,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:38.827271",
+    "level": "info",
+    "step": "charts",
+    "message": "生成基础图表",
+    "duration_ms": null,
+    "details": {}
+  },
+  {
+    "timestamp": "2026-06-02T11:15:39.536490",
+    "level": "success",
+    "step": "charts",
+    "message": "完成 charts",
+    "duration_ms": 709.2151641845703,
+    "details": {}
+  }
+]

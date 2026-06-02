@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project outputs
+output/*.html
+output/*.md
+output/*.png
+output/*.jpg
+logs/*.log
+logs/*.json
+
+# Temporary test databases
+test_*.db
+*.db
+
+# Environment
+.env
+.venv/
+venv/
+
+# Sample data cache
+data/.cache/
+
+# Personal workspace files
+.openclaw/
+cover_image.png
+wechat_article_content.txt
+
+# Memory files (workspace private)
+memory/*.md
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# Gradio
+demo/
+gradio_cached_examples/
