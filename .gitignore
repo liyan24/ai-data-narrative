@@ -18,13 +18,9 @@ build/
 .DS_Store
 Thumbs.db
 
-# Project outputs
-output/*.html
-output/*.md
-output/*.png
-output/*.jpg
-logs/*.log
-logs/*.json
+# Project outputs and logs
+output/
+logs/
 
 # Temporary test databases
 test_*.db
@@ -38,13 +34,13 @@ venv/
 # Sample data cache
 data/.cache/
 
-# Personal workspace files
+# Personal workspace files (DO NOT commit)
 .openclaw/
 cover_image.png
 wechat_article_content.txt
 
 # Memory files (workspace private)
-memory/*.md
+memory/
 AGENTS.md
 BOOTSTRAP.md
 HEARTBEAT.md
@@ -52,6 +48,14 @@ IDENTITY.md
 SOUL.md
 TOOLS.md
 USER.md
+
+# Skills (workspace private)
+skills/
+
+# Docs, prompts, templates (workspace private)
+docs/
+prompts/
+templates/
 
 # Gradio
 demo/
