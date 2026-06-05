@@ -1,0 +1,9 @@
+{
+  "app_id": "YOUR_APPID_HERE",
+  "app_secret": "YOUR_APPSECRET_HERE",
+  "note": "从微信公众号后台获取：开发 -> 基本配置 -> 公众号开发信息",
+  "ip_whitelist": [
+    "你的服务器公网IP地址"
+  ],
+  "help": "配置步骤：1.登录mp.weixin.qq.com 2.开发->基本配置 3.获取AppID和AppSecret 4.设置IP白名单"
+}

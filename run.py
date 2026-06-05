@@ -1,15 +1,21 @@
 """
-AI数据叙事系统 — 快捷运行入口
+AI数据叙事系统 v6.0 — 快捷运行入口
 
 使用方式:
     python run.py data/sales_data.csv
-    python run.py data/customer_data.csv --max-charts 3
-    python run.py data/employee_data.xlsx --output ./my_reports
+    python run.py data/customer_data.csv --user-input "我是电商运营，想分析销售趋势"
+    python run.py data/employee_data.xlsx --output ./my_reports --max-charts 3
+    python run.py sqlite:///data/orders.db --user-input "分析订单数据"
 
-环境变量:
-    LLM_API_KEY     大模型 API Key
+环境变量 (.env):
     LLM_BASE_URL    大模型 API 地址 (默认: https://api.moonshot.cn/v1)
+    LLM_API_KEY     大模型 API Key
     LLM_MODEL       模型名称 (默认: kimi-latest)
+    LLM_TEMPERATURE 采样温度 (默认: 0.3)
+    LLM_MAX_TOKENS  最大输出长度 (默认: 4096)
+    SKILL_MAX_WORKERS 并行执行线程数 (默认: 4)
+    SKILL_PARALLEL    启用并行执行 (默认: true)
+    VIZ_FONT          图表字体 (默认: SimHei)
 """
 
 import sys
@@ -29,122 +35,204 @@ from src.pipeline import DataNarrativePipeline
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description="AI数据叙事系统")
-    parser.add_argument("file", help="数据文件路径 (CSV/Excel/JSON)")
-    parser.add_argument("--output", "-o", default=None, help="输出目录")
-    parser.add_argument("--max-charts", "-c", type=int, default=5, help="最大图表数量")
-    parser.add_argument("--hint", "-t", default=None, help="叙事意图提示")
-    
-    parser.add_argument("--auto-clean", action="store_true", help="启用自动清洗")
-    parser.add_argument("--aggressive", action="store_true", help="激进清洗模式")
-    
-    # 第三阶段参数
-    parser.add_argument("--no-advanced", action="store_true", help="禁用高级图表")
-    parser.add_argument("--no-story", action="store_true", help="禁用数据故事")
-    parser.add_argument("--no-publish", action="store_true", help="禁用平台发布适配")
-    parser.add_argument("--sample", type=int, default=None, help="大数据采样分析（指定采样行数）")
-    
-    # 第四阶段参数
-    parser.add_argument("--llm-enhance", action="store_true", help="启用 LLM 洞察增强（需要 API Key）")
-    parser.add_argument("--no-monitor", action="store_true", help="禁用性能监控")
-    parser.add_argument("--auto-publish", action="store_true", help="自动发布到已配置平台（需先配置）")
-    parser.add_argument("--health-check", action="store_true", help="运行健康检查并退出")
-    
-    # 第五阶段参数
-    parser.add_argument("--no-ml", action="store_true", help="禁用 ML 分析")
-    parser.add_argument("--plugin-dir", default=None, help="插件目录")
-    parser.add_argument("--locale", default="zh", choices=["zh", "en"], help="界面语言")
-    parser.add_argument("--web", action="store_true", help="启动增强 Web 界面")
-    parser.add_argument("--db", default=None, help="数据库连接字符串（如 sqlite:///data.db）")
+    parser = argparse.ArgumentParser(
+        description="AI数据叙事系统 v6.0 — 大模型驱动的全自动数据叙事流水线"
+    )
+    parser.add_argument(
+        "source",
+        nargs="?",
+        default=None,
+        help="数据源路径 (CSV/Excel/JSON/JSON Lines/Parquet/SQLite/URL/数据库连接字符串)"
+    )
+    parser.add_argument(
+        "--output", "-o",
+        default=None,
+        help="输出目录 (默认: output/)"
+    )
+    parser.add_argument(
+        "--user-input", "-u",
+        default=None,
+        help="用户需求描述 (如: 我是电商运营，想分析销售趋势)"
+    )
+    parser.add_argument(
+        "--max-charts", "-c",
+        type=int,
+        default=5,
+        help="最大图表数量 (默认: 5)"
+    )
+    parser.add_argument(
+        "--no-user-intent",
+        action="store_true",
+        help="禁用用户意图理解 (跳过 Phase 0，使用默认画像)"
+    )
+    parser.add_argument(
+        "--no-skill-director",
+        action="store_true",
+        help="禁用技能导演 (跳过 Phase 2，使用默认执行计划)"
+    )
+    parser.add_argument(
+        "--no-parallel",
+        action="store_true",
+        help="禁用并行执行 (串行执行所有技能)"
+    )
+    parser.add_argument(
+        "--no-llm-cache",
+        action="store_true",
+        help="禁用 LLM 缓存 (每次调用都请求 API)"
+    )
+    parser.add_argument(
+        "--auto-clean",
+        action="store_true",
+        help="启用数据自动清洗"
+    )
+    parser.add_argument(
+        "--verbose", "-v",
+        action="store_true",
+        help="详细输出执行日志"
+    )
+    parser.add_argument(
+        "--generate-skill",
+        default=None,
+        help="触发动态技能生成 (如: geo-heatmap, text-analysis)"
+    )
     
     args = parser.parse_args()
     
-    # 启动 Web 界面
-    if args.web:
-        from src.web.enhanced_app import create_enhanced_app
-        app = create_enhanced_app()
-        app.launch(server_name="0.0.0.0", server_port=7860, share=False)
-        return
+    # 检查数据源
+    if not args.source:
+        print("[ERROR] 需要提供数据源路径")
+        print("\n用法示例:")
+        print("  python run.py data/sales_data.csv")
+        print("  python run.py data/orders.db --user-input '分析订单数据'")
+        print("  python run.py https://api.example.com/data.csv --user-input '分析用户行为'")
+        print("  python run.py mysql://user:pass@host/db --user-input '分析销售数据'")
+        print("\n支持的数据源:")
+        print("  本地文件: CSV, Excel (.xlsx), JSON, JSON Lines (.jsonl), Parquet")
+        print("  SQLite: .db, .sqlite, .sqlite3")
+        print("  数据库连接: mysql://, postgresql://, mongodb://")
+        print("  REST API: https://...")
+        sys.exit(1)
     
-    # 检查文件是否存在
-    file_path = Path(args.file)
-    if not file_path.exists():
-        print(f"[ERROR] 文件不存在: {file_path}")
+    # 检查文件是否存在（本地文件）
+    source_path = Path(args.source)
+    is_local_file = (
+        not args.source.startswith(("http://", "https://", "mysql://", "postgresql://", "mongodb://", "sqlite://"))
+        and not args.source.startswith("mongodb://")
+    )
+    if is_local_file and not source_path.exists():
+        print(f"[ERROR] 文件不存在: {source_path}")
         print("\n提示: 先运行示例数据生成")
         print("   python examples/generate_sample_data.py")
         sys.exit(1)
     
-    # 处理健康检查
-    if args.health_check:
-        from src.monitoring.logger import HealthChecker
-        checker = HealthChecker()
-        report = checker.check_all()
-        print("\n[HEALTH CHECK] 系统健康检查")
-        print(f"整体状态: {report['status']}")
-        print(f"检查项: {report['summary']['ok']} 正常, {report['summary']['warning']} 警告, {report['summary']['error']} 错误")
-        for name, check in report['checks'].items():
-            status = check['status']
-            icon = 'OK' if status == 'ok' else 'WARN' if status == 'warning' else 'ERR'
-            print(f"  [{icon}] {name}: {check.get('message', '')}")
-        sys.exit(0)
-    
+    # 初始化流水线
     pipeline = DataNarrativePipeline(
         max_charts=args.max_charts,
         output_dir=args.output,
         auto_clean=args.auto_clean,
-        aggressive_clean=args.aggressive,
-        enable_advanced_charts=not args.no_advanced,
-        enable_storytelling=not args.no_story,
-        enable_publishing=not args.no_publish,
-        sample_size=args.sample,
-        enable_llm_enhance=args.llm_enhance,
-        enable_monitoring=not args.no_monitor,
-        enable_auto_publish=args.auto_publish,
-        enable_ml_analysis=not args.no_ml,
-        plugin_dir=args.plugin_dir,
-        locale=args.locale
+        enable_user_intent=not args.no_user_intent,
+        enable_skill_director=not args.no_skill_director,
+        verbose=args.verbose,
     )
     
-    result = pipeline.run(str(file_path), narrative_hint=args.hint)
+    # 执行分析
+    print("=" * 60)
+    print(f"[SOURCE] 数据源: {args.source}")
+    if args.user_input:
+        print(f"[USER]   用户需求: {args.user_input}")
+    print("=" * 60)
     
+    result = pipeline.run(
+        str(args.source),
+        user_input=args.user_input
+    )
+    
+    # 输出结果摘要
     print("\n" + "=" * 60)
     print("[DONE] 处理完成!")
-    print(f"[REPORT] 报告路径: {result['report_path']}")
-    print(f"[CHARTS] 生成图表: {result['charts_count']} 张")
-    print(f"[INSIGHTS] 数据洞察: {result['insights_count']} 条")
-    print(f"[ANALYSIS] 多维分析: {result['analysis_count']} 项")
-    print(f"[STORY] 故事章节: {result.get('story_sections', 0)} 个")
-    print(f"[PLATFORMS] 平台适配: {', '.join(result.get('platforms', []))}")
-    print(f"[STRATEGY] 叙事策略: {result['strategy']['title']}")
+    print("=" * 60)
     
-    # 第四阶段输出
-    if result.get('report_summary'):
-        print(f"[SUMMARY] 报告摘要: {result['report_summary'][:100]}...")
-    if result.get('performance') and result['performance'].get('status') == 'success':
-        perf = result['performance']
-        mem = perf.get('memory', {})
-        print(f"[PERF] 内存峰值: {mem.get('peak_mb', 0):.1f} MB, 耗时: {perf.get('elapsed_seconds', 0):.1f}s")
-    if args.llm_enhance:
-        print("[LLM] LLM 增强已启用")
+    phases = result.get("phases", {})
     
-    # 第五阶段输出
-    if result.get('ml_analysis'):
-        ml = result['ml_analysis']
-        ml_outputs = []
-        if ml.get('anomalies'):
-            ml_outputs.append(f"异常检测: {len(ml['anomalies'])} 列")
-        if ml.get('clusters'):
-            ml_outputs.append(f"聚类: {ml['clusters']['n_clusters']} 类")
-        if ml.get('prediction'):
-            ml_outputs.append(f"预测: {ml['prediction']['horizon']} 步")
-        if ml.get('feature_importance'):
-            ml_outputs.append(f"特征重要性: {len(ml['feature_importance'])} 个")
-        if ml_outputs:
-            print(f"[ML] {' | '.join(ml_outputs)}")
+    # Phase 0: 用户意图
+    if "user_intent" in phases and phases["user_intent"]:
+        ui = phases["user_intent"]
+        if isinstance(ui, dict):
+            up = ui.get("user_profile", {})
+            if isinstance(up, dict):
+                print(f"[USER]   角色: {up.get('role', 'N/A')}")
+                print(f"[USER]   行业: {up.get('industry', 'N/A')}")
+                print(f"[USER]   目标: {up.get('goal', 'N/A')}")
+    
+    # Phase 1: 数据加载
+    if "data_load" in phases and phases["data_load"]:
+        dl = phases["data_load"]
+        if isinstance(dl, dict):
+            print(f"[DATA]   文件: {dl.get('file', 'N/A')}")
+            print(f"[DATA]   维度: {dl.get('rows', 'N/A')} 行 x {dl.get('columns', 'N/A')} 列")
+    
+    # Phase 3: 技能执行
+    if "skill_execution" in phases:
+        se = phases["skill_execution"]
+        if isinstance(se, dict):
+            success = sum(1 for sr in se.values() if sr.get("status") == "success")
+            failed = sum(1 for sr in se.values() if sr.get("status") == "error")
+            skipped = sum(1 for sr in se.values() if sr.get("status") == "skipped")
+            print(f"[SKILLS] 执行: {success} 成功, {failed} 失败, {skipped} 跳过")
+            if args.verbose:
+                for name, sr in se.items():
+                    st = sr.get("status", "N/A")
+                    meta = sr.get("metadata", {})
+                    extra = ""
+                    if "elapsed_seconds" in meta:
+                        extra = f" ({meta['elapsed_seconds']}s)"
+                    print(f"  [{st.upper()}] {name}{extra}")
+    
+    # 报告路径
+    report_path = result.get("report_path")
+    if not report_path:
+        # Try to get from skill_execution -> report-builder
+        rb = phases.get("skill_execution", {}).get("report-builder", {})
+        if isinstance(rb, dict) and rb.get("data"):
+            report_path = rb["data"].get("report_path")
+    
+    if report_path:
+        print(f"[REPORT] 报告路径: {report_path}")
+    
+    # 性能
+    perf = result.get("performance")
+    if perf and isinstance(perf, dict):
+        print(f"[PERF]   总耗时: {perf.get('total_elapsed_seconds', 'N/A')}s")
+    
+    # 输出目录
+    output_dir = result.get("output_dir")
+    if output_dir:
+        print(f"[OUTPUT] 所有输出保存在: {output_dir}")
     
     print("=" * 60)
-    print(f"[OUTPUT] 所有输出保存在: {Path(result['report_path']).parent}")
-    print(f"[LOGS] 查看 logs/ 目录获取详细日志和性能报告")
+    
+    # 动态技能生成测试（如果指定）
+    if args.generate_skill:
+        from src.skills.generator import SkillGenerator
+        from src.skills.models import SkillContext
+        from src.data_schema.models import DataProfile
+        import pandas as pd
+        
+        print(f"\n[GENERATE] 触发动态技能生成: {args.generate_skill}")
+        registry = pipeline.skill_registry
+        generator = SkillGenerator(registry)
+        
+        # 创建测试上下文
+        df = pd.DataFrame({"a": [1, 2, 3]})
+        ctx = SkillContext(data_profile=DataProfile(df=df, source_name="test.csv"))
+        
+        generated = generator.generate(args.generate_skill, ctx, verbose=True)
+        if generated:
+            print(f"[GENERATE] 技能生成成功: {generated.name}")
+            print(f"[GENERATE] 目录: {generated.skill_dir}")
+            print(f"[GENERATE] 安全通过: {generated.security_passed}")
+        else:
+            print(f"[GENERATE] 技能生成失败或不需要生成")
 
 
 if __name__ == "__main__":

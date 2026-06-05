@@ -9,9 +9,10 @@ from src.config import LLM_CONFIG
 
 
 class LLMClient:
-    """统一大模型调用客户端"""
+    """统一大模型调用客户端（带缓存）"""
     
-    def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None, model: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None, model: Optional[str] = None,
+                 enable_cache: bool = True, cache_dir: Optional[Path] = None):
         self.api_key = api_key or LLM_CONFIG["api_key"]
         self.base_url = base_url or LLM_CONFIG["base_url"]
         self.model = model or LLM_CONFIG["model"]
@@ -19,27 +20,50 @@ class LLMClient:
         self.max_tokens = LLM_CONFIG["max_tokens"]
         
         self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+        
+        # 缓存
+        self.enable_cache = enable_cache
+        if enable_cache:
+            from src.llm_cache import LLMCache
+            self.cache = LLMCache(cache_dir=cache_dir)
+        else:
+            self.cache = None
     
     def chat(self, messages: List[Dict[str, str]], temperature: Optional[float] = None, **kwargs) -> str:
         """
-        通用对话接口
+        通用对话接口（带缓存）
         
         Args:
-            messages: 消息列表 [{"role": "system"|"user"|"assistant", "content": str}]
+            messages: 消息列表
             temperature: 温度参数（覆盖默认）
             
         Returns:
             模型返回的文本内容
         """
+        temp = temperature or self.temperature
+        
+        # 尝试从缓存读取
+        if self.enable_cache and self.cache:
+            cached = self.cache.get(messages, temp, **kwargs)
+            if cached is not None:
+                return cached
+        
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
-                temperature=temperature or self.temperature,
+                temperature=temp,
                 max_tokens=self.max_tokens,
                 **kwargs
             )
-            return response.choices[0].message.content
+            result = response.choices[0].message.content
+            
+            # 写入缓存
+            if self.enable_cache and self.cache:
+                self.cache.set(messages, temp, result, **kwargs)
+            
+            return result
+            
         except Exception as e:
             return f"[LLM调用错误] {str(e)}"
     

@@ -287,8 +287,11 @@ class AnalysisCache:
     
     def _get_cache_key(self, file_path: str, analysis_name: str, params: Dict = None) -> str:
         """生成缓存键"""
-        # 基于文件路径 + 修改时间 + 分析名称 + 参数
-        mtime = os.path.getmtime(file_path)
+        # 对于文件路径获取修改时间，对于非文件路径使用字符串本身
+        if os.path.isfile(file_path):
+            mtime = os.path.getmtime(file_path)
+        else:
+            mtime = file_path
         key_data = f"{file_path}:{mtime}:{analysis_name}:{str(params)}"
         return hashlib.md5(key_data.encode()).hexdigest()
     
