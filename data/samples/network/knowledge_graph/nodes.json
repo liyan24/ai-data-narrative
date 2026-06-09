@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ENT_1",
+    "type": "公司",
+    "label": "实体_1",
+    "attributes": {
+      "name": "名称_1",
+      "description": "这是实体1的描述",
+      "source": "企业年报"
+    }
+  },
+  {
+    "id": "ENT_2",
+    "type": "产品",
+    "label": "实体_2",
+    "attributes": {
+      "name": "名称_2",
+      "description": "这是实体2的描述",
+      "source": "新闻报道"
+    }
+  },
+  {
+    "id": "ENT_3",
+    "type": "行业",
+    "label": "实体_3",
+    "attributes": {
+      "name": "名称_3",
+      "description": "这是实体3的描述",
+      "source": "专利库"
+    }
+  },
+  {
+    "id": "ENT_4",
+    "type": "人物",
+    "label": "实体_4",
+    "attributes": {
+      "name": "名称_4",
+      "description": "这是实体4的描述",
+      "source": "维基百科"
+    }
+  },
+  {
+    "id": "ENT_5",
+    "type": "公司",
+    "label": "实体_5",
+    "attributes": {
+      "name": "名称_5",
+      "description": "这是实体5的描述",
+      "source": "企业年报"
+    }
+  },
+  {
+    "id": "ENT_6",
+    "type": "产品",
+    "label": "实体_6",
+    "attributes": {
+      "name": "名称_6",
+      "description": "这是实体6的描述",
+      "source": "新闻报道"
+    }
+  },
+  {
+    "id": "ENT_7",
+    "type": "行业",
+    "label": "实体_7",
+    "attributes": {
+      "name": "名称_7",
+      "description": "这是实体7的描述",
+      "source": "专利库"
+    }
+  },
+  {
+    "id": "ENT_8",
+    "type": "人物",
+    "label": "实体_8",
+    "attributes": {
+      "name": "名称_8",
+      "description": "这是实体8的描述",
+      "source": "维基百科"
+    }
+  },
+  {
+    "id": "ENT_9",
+    "type": "公司",
+    "label": "实体_9",
+    "attributes": {
+      "name": "名称_9",
+      "description": "这是实体9的描述",
+      "source": "企业年报"
+    }
+  },
+  {
+    "id": "ENT_10",
+    "type": "产品",
+    "label": "实体_10",
+    "attributes": {
+      "name": "名称_10",
+      "description": "这是实体10的描述",
+      "source": "新闻报道"
+    }
+  },
+  {
+    "id": "ENT_11",
+    "type": "行业",
+    "label": "实体_11",
+    "attributes": {
+      "name": "名称_11",
+      "description": "这是实体11的描述",
+      "source": "专利库"
+    }
+  },
+  {
+    "id": "ENT_12",
+    "type": "人物",
+    "label": "实体_12",
+    "attributes": {
+      "name": "名称_12",
+      "description": "这是实体12的描述",
+      "source": "维基百科"
+    }
+  },
+  {
+    "id": "ENT_13",
+    "type": "公司",
+    "label": "实体_13",
+    "attributes": {
+      "name": "名称_13",
+      "description": "这是实体13的描述",
+      "source": "企业年报"
+    }
+  },
+  {
+    "id": "ENT_14",
+    "type": "产品",
+    "label": "实体_14",
+    "attributes": {
+      "name": "名称_14",
+      "description": "这是实体14的描述",
+      "source": "新闻报道"
+    }
+  },
+  {
+    "id": "ENT_15",
+    "type": "行业",
+    "label": "实体_15",
+    "attributes": {
+      "name": "名称_15",
+      "description": "这是实体15的描述",
+      "source": "专利库"
+    }
+  },
+  {
+    "id": "ENT_16",
+    "type": "人物",
+    "label": "实体_16",
+    "attributes": {
+      "name": "名称_16",
+      "description": "这是实体16的描述",
+      "source": "维基百科"
+    }
+  },
+  {
+    "id": "ENT_17",
+    "type": "公司",
+    "label": "实体_17",
+    "attributes": {
+      "name": "名称_17",
+      "description": "这是实体17的描述",
+      "source": "企业年报"
+    }
+  },
+  {
+    "id": "ENT_18",
+    "type": "产品",
+    "label": "实体_18",
+    "attributes": {
+      "name": "名称_18",
+      "description": "这是实体18的描述",
+      "source": "新闻报道"
+    }
+  },
+  {
+    "id": "ENT_19",
+    "type": "行业",
+    "label": "实体_19",
+    "attributes": {
+      "name": "名称_19",
+      "description": "这是实体19的描述",
+      "source": "专利库"
+    }
+  },
+  {
+    "id": "ENT_20",
+    "type": "人物",
+    "label": "实体_20",
+    "attributes": {
+      "name": "名称_20",
+      "description": "这是实体20的描述",
+      "source": "维基百科"
+    }
+  }
+]

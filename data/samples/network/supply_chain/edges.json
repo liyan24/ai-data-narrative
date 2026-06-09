@@ -1,0 +1,281 @@
+[
+  {
+    "source": "SC_1",
+    "target": "SC_2",
+    "type": "供应",
+    "properties": {
+      "volume": 110,
+      "lead_time_days": 4
+    }
+  },
+  {
+    "source": "SC_2",
+    "target": "SC_3",
+    "type": "供应",
+    "properties": {
+      "volume": 120,
+      "lead_time_days": 5
+    }
+  },
+  {
+    "source": "SC_3",
+    "target": "SC_4",
+    "type": "供应",
+    "properties": {
+      "volume": 130,
+      "lead_time_days": 6
+    }
+  },
+  {
+    "source": "SC_4",
+    "target": "SC_5",
+    "type": "供应",
+    "properties": {
+      "volume": 140,
+      "lead_time_days": 7
+    }
+  },
+  {
+    "source": "SC_4",
+    "target": "SC_9",
+    "type": "合作",
+    "properties": {
+      "contract_value": 54000,
+      "duration_years": 2
+    }
+  },
+  {
+    "source": "SC_5",
+    "target": "SC_6",
+    "type": "供应",
+    "properties": {
+      "volume": 150,
+      "lead_time_days": 8
+    }
+  },
+  {
+    "source": "SC_6",
+    "target": "SC_7",
+    "type": "供应",
+    "properties": {
+      "volume": 160,
+      "lead_time_days": 9
+    }
+  },
+  {
+    "source": "SC_7",
+    "target": "SC_8",
+    "type": "供应",
+    "properties": {
+      "volume": 170,
+      "lead_time_days": 3
+    }
+  },
+  {
+    "source": "SC_8",
+    "target": "SC_9",
+    "type": "供应",
+    "properties": {
+      "volume": 180,
+      "lead_time_days": 4
+    }
+  },
+  {
+    "source": "SC_8",
+    "target": "SC_13",
+    "type": "合作",
+    "properties": {
+      "contract_value": 58000,
+      "duration_years": 3
+    }
+  },
+  {
+    "source": "SC_9",
+    "target": "SC_10",
+    "type": "供应",
+    "properties": {
+      "volume": 190,
+      "lead_time_days": 5
+    }
+  },
+  {
+    "source": "SC_10",
+    "target": "SC_11",
+    "type": "供应",
+    "properties": {
+      "volume": 200,
+      "lead_time_days": 6
+    }
+  },
+  {
+    "source": "SC_11",
+    "target": "SC_12",
+    "type": "供应",
+    "properties": {
+      "volume": 210,
+      "lead_time_days": 7
+    }
+  },
+  {
+    "source": "SC_12",
+    "target": "SC_13",
+    "type": "供应",
+    "properties": {
+      "volume": 220,
+      "lead_time_days": 8
+    }
+  },
+  {
+    "source": "SC_12",
+    "target": "SC_17",
+    "type": "合作",
+    "properties": {
+      "contract_value": 62000,
+      "duration_years": 1
+    }
+  },
+  {
+    "source": "SC_13",
+    "target": "SC_14",
+    "type": "供应",
+    "properties": {
+      "volume": 230,
+      "lead_time_days": 9
+    }
+  },
+  {
+    "source": "SC_14",
+    "target": "SC_15",
+    "type": "供应",
+    "properties": {
+      "volume": 240,
+      "lead_time_days": 3
+    }
+  },
+  {
+    "source": "SC_15",
+    "target": "SC_16",
+    "type": "供应",
+    "properties": {
+      "volume": 250,
+      "lead_time_days": 4
+    }
+  },
+  {
+    "source": "SC_16",
+    "target": "SC_17",
+    "type": "供应",
+    "properties": {
+      "volume": 260,
+      "lead_time_days": 5
+    }
+  },
+  {
+    "source": "SC_16",
+    "target": "SC_21",
+    "type": "合作",
+    "properties": {
+      "contract_value": 66000,
+      "duration_years": 2
+    }
+  },
+  {
+    "source": "SC_17",
+    "target": "SC_18",
+    "type": "供应",
+    "properties": {
+      "volume": 270,
+      "lead_time_days": 6
+    }
+  },
+  {
+    "source": "SC_18",
+    "target": "SC_19",
+    "type": "供应",
+    "properties": {
+      "volume": 280,
+      "lead_time_days": 7
+    }
+  },
+  {
+    "source": "SC_19",
+    "target": "SC_20",
+    "type": "供应",
+    "properties": {
+      "volume": 290,
+      "lead_time_days": 8
+    }
+  },
+  {
+    "source": "SC_20",
+    "target": "SC_21",
+    "type": "供应",
+    "properties": {
+      "volume": 300,
+      "lead_time_days": 9
+    }
+  },
+  {
+    "source": "SC_20",
+    "target": "SC_25",
+    "type": "合作",
+    "properties": {
+      "contract_value": 70000,
+      "duration_years": 3
+    }
+  },
+  {
+    "source": "SC_21",
+    "target": "SC_22",
+    "type": "供应",
+    "properties": {
+      "volume": 310,
+      "lead_time_days": 3
+    }
+  },
+  {
+    "source": "SC_22",
+    "target": "SC_23",
+    "type": "供应",
+    "properties": {
+      "volume": 320,
+      "lead_time_days": 4
+    }
+  },
+  {
+    "source": "SC_23",
+    "target": "SC_24",
+    "type": "供应",
+    "properties": {
+      "volume": 330,
+      "lead_time_days": 5
+    }
+  },
+  {
+    "source": "SC_24",
+    "target": "SC_25",
+    "type": "供应",
+    "properties": {
+      "volume": 340,
+      "lead_time_days": 6
+    }
+  },
+  {
+    "source": "SC_24",
+    "target": "SC_4",
+    "type": "合作",
+    "properties": {
+      "contract_value": 74000,
+      "duration_years": 1
+    }
+  },
+  {
+    "source": "SC_25",
+    "target": "SC_1",
+    "type": "供应",
+    "properties": {
+      "volume": 350,
+      "lead_time_days": 7
+    }
+  }
+]

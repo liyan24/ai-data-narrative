@@ -1,0 +1,51 @@
+{
+  "data_type": "timeseries",
+  "title": "网站流量来源分日时序",
+  "description": "某网站30天内按流量来源（5个渠道）拆分的日访问量、跳出率和平均停留时长。",
+  "schema": {
+    "time_field": {
+      "name": "日期",
+      "description": "统计日期",
+      "format": "YYYY-MM-DD",
+      "period": "日"
+    },
+    "value_fields": [
+      {
+        "name": "访问量",
+        "description": "该来源当日的独立访客数",
+        "type": "integer",
+        "unit": "UV"
+      },
+      {
+        "name": "跳出率",
+        "description": "只看了一页就离开的访客比例",
+        "type": "numeric",
+        "unit": "比例",
+        "range": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "平均停留",
+        "description": "访客在站内的平均停留时间",
+        "type": "numeric",
+        "unit": "秒"
+      }
+    ],
+    "dimension_fields": [
+      {
+        "name": "来源",
+        "description": "流量来源渠道",
+        "type": "categorical",
+        "values": [
+          "自然搜索",
+          "付费广告",
+          "社交媒体",
+          "直接访问",
+          "邮件营销"
+        ]
+      }
+    ]
+  }
+}

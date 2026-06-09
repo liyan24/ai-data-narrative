@@ -1,0 +1,139 @@
+{
+  "data_type": "network",
+  "title": "学术论文引用与合作网络",
+  "description": "20篇学术论文（期刊/会议/综述）及引用和合作关系。",
+  "schema": {
+    "node_types": {
+      "期刊论文": {
+        "description": "发表在学术期刊上的研究论文",
+        "attributes": {
+          "title": {
+            "type": "string",
+            "description": "论文标题"
+          },
+          "author": {
+            "type": "string",
+            "description": "第一作者"
+          },
+          "year": {
+            "type": "integer",
+            "description": "发表年份"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "被引次数"
+          },
+          "field": {
+            "type": "categorical",
+            "description": "研究领域",
+            "values": [
+              "AI",
+              "数据库",
+              "网络安全",
+              "图形学",
+              "NLP"
+            ]
+          },
+          "impact_factor": {
+            "type": "numeric",
+            "description": "期刊影响因子"
+          }
+        }
+      },
+      "会议论文": {
+        "description": "发表在学术会议上的研究论文",
+        "attributes": {
+          "title": {
+            "type": "string",
+            "description": "论文标题"
+          },
+          "author": {
+            "type": "string",
+            "description": "第一作者"
+          },
+          "year": {
+            "type": "integer",
+            "description": "发表年份"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "被引次数"
+          },
+          "field": {
+            "type": "categorical",
+            "description": "研究领域",
+            "values": [
+              "AI",
+              "数据库",
+              "网络安全",
+              "图形学",
+              "NLP"
+            ]
+          },
+          "impact_factor": {
+            "type": "numeric",
+            "description": "会议h5指数等替代指标"
+          }
+        }
+      },
+      "综述": {
+        "description": "系统性综述文章",
+        "attributes": {
+          "title": {
+            "type": "string",
+            "description": "论文标题"
+          },
+          "author": {
+            "type": "string",
+            "description": "第一作者"
+          },
+          "year": {
+            "type": "integer",
+            "description": "发表年份"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "被引次数"
+          },
+          "field": {
+            "type": "categorical",
+            "description": "研究领域",
+            "values": [
+              "AI",
+              "数据库",
+              "网络安全",
+              "图形学",
+              "NLP"
+            ]
+          },
+          "impact_factor": {
+            "type": "numeric",
+            "description": "发表载体指标"
+          }
+        }
+      }
+    },
+    "edge_types": {
+      "引用": {
+        "description": "论文A引用了论文B",
+        "directed": true,
+        "properties": {
+          "citation_count": {
+            "type": "integer",
+            "description": "引用次数（通常1次）"
+          }
+        }
+      },
+      "合作": {
+        "description": "论文A与论文B有共同作者",
+        "directed": false,
+        "properties": {
+          "coauthor_count": {
+            "type": "integer",
+            "description": "共同作者数量"
+          }
+        }
+      }
+    }
+  }
+}

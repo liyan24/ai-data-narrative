@@ -1,0 +1,176 @@
+{
+  "data_type": "network",
+  "title": "社交媒体关系网络",
+  "description": "40个用户节点（含普通用户、KOL、商家三种类型）及关注/互动/推荐三种关系边。",
+  "schema": {
+    "node_types": {
+      "普通用户": {
+        "description": "平台普通注册用户",
+        "attributes": {
+          "age": {
+            "type": "integer",
+            "description": "年龄",
+            "unit": "岁",
+            "range": [
+              18,
+              67
+            ]
+          },
+          "gender": {
+            "type": "categorical",
+            "description": "性别",
+            "values": [
+              "男",
+              "女"
+            ]
+          },
+          "city": {
+            "type": "categorical",
+            "description": "所在城市",
+            "values": [
+              "北京",
+              "上海",
+              "广州",
+              "深圳"
+            ]
+          },
+          "followers": {
+            "type": "integer",
+            "description": "粉丝数"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "是否认证"
+          }
+        }
+      },
+      "KOL": {
+        "description": "平台关键意见领袖",
+        "attributes": {
+          "age": {
+            "type": "integer",
+            "description": "年龄",
+            "unit": "岁",
+            "range": [
+              18,
+              67
+            ]
+          },
+          "gender": {
+            "type": "categorical",
+            "description": "性别",
+            "values": [
+              "男",
+              "女"
+            ]
+          },
+          "city": {
+            "type": "categorical",
+            "description": "所在城市",
+            "values": [
+              "北京",
+              "上海",
+              "广州",
+              "深圳"
+            ]
+          },
+          "followers": {
+            "type": "integer",
+            "description": "粉丝数"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "是否认证",
+            "constraint": "必须为True"
+          }
+        }
+      },
+      "商家": {
+        "description": "平台入驻商家账号",
+        "attributes": {
+          "age": {
+            "type": "integer",
+            "description": "商家成立年限",
+            "unit": "年"
+          },
+          "gender": {
+            "type": "categorical",
+            "description": "法人性别",
+            "values": [
+              "男",
+              "女"
+            ]
+          },
+          "city": {
+            "type": "categorical",
+            "description": "注册城市",
+            "values": [
+              "北京",
+              "上海",
+              "广州",
+              "深圳"
+            ]
+          },
+          "followers": {
+            "type": "integer",
+            "description": "店铺关注数"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "是否企业认证"
+          }
+        }
+      }
+    },
+    "edge_types": {
+      "关注": {
+        "description": "用户A关注了用户B",
+        "directed": true,
+        "properties": {
+          "weight": {
+            "type": "integer",
+            "description": "关系强度权重",
+            "default": 1
+          },
+          "since": {
+            "type": "date",
+            "description": "关注开始日期",
+            "format": "YYYY-MM-DD"
+          }
+        }
+      },
+      "互动": {
+        "description": "用户A与用户B有内容互动（点赞/评论/转发）",
+        "directed": true,
+        "properties": {
+          "weight": {
+            "type": "integer",
+            "description": "互动频次权重"
+          },
+          "count": {
+            "type": "integer",
+            "description": "近30天互动次数"
+          }
+        }
+      },
+      "推荐": {
+        "description": "平台算法将B推荐给A",
+        "directed": true,
+        "properties": {
+          "weight": {
+            "type": "integer",
+            "description": "推荐优先级"
+          },
+          "confidence": {
+            "type": "numeric",
+            "description": "推荐置信度",
+            "range": [
+              0,
+              1
+            ]
+          }
+        }
+      }
+    }
+  }
+}

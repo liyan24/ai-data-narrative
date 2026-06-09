@@ -1,0 +1,59 @@
+{
+  "data_type": "timeseries",
+  "title": "工业传感器多设备时序数据",
+  "description": "3台工业设备24小时连续采集的温度、湿度、压力及振动数据。",
+  "schema": {
+    "time_field": {
+      "name": "时间",
+      "description": "数据采集时间",
+      "format": "YYYY-MM-DD HH:MM",
+      "period": "小时"
+    },
+    "value_fields": [
+      {
+        "name": "温度",
+        "description": "设备表面温度",
+        "type": "numeric",
+        "unit": "摄氏度",
+        "threshold": {
+          "warning": 45,
+          "critical": 55
+        }
+      },
+      {
+        "name": "湿度",
+        "description": "环境相对湿度",
+        "type": "numeric",
+        "unit": "%"
+      },
+      {
+        "name": "压力",
+        "description": "设备内部气压",
+        "type": "numeric",
+        "unit": "hPa"
+      },
+      {
+        "name": "振动",
+        "description": "设备振动幅度",
+        "type": "numeric",
+        "unit": "mm/s",
+        "threshold": {
+          "warning": 0.5,
+          "critical": 1.0
+        }
+      }
+    ],
+    "dimension_fields": [
+      {
+        "name": "设备ID",
+        "description": "传感器所属设备编号",
+        "type": "categorical",
+        "values": [
+          "DEV_A",
+          "DEV_B",
+          "DEV_C"
+        ]
+      }
+    ]
+  }
+}

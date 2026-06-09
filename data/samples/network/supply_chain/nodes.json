@@ -1,0 +1,277 @@
+[
+  {
+    "id": "SC_1",
+    "type": "制造商",
+    "label": "节点_1",
+    "attributes": {
+      "name": "企业_1",
+      "region": "华南",
+      "capacity": 1200,
+      "risk_score": 1.5
+    }
+  },
+  {
+    "id": "SC_2",
+    "type": "分销商",
+    "label": "节点_2",
+    "attributes": {
+      "name": "企业_2",
+      "region": "华北",
+      "capacity": 1400,
+      "risk_score": 2.0
+    }
+  },
+  {
+    "id": "SC_3",
+    "type": "零售商",
+    "label": "节点_3",
+    "attributes": {
+      "name": "企业_3",
+      "region": "西南",
+      "capacity": 1600,
+      "risk_score": 2.5
+    }
+  },
+  {
+    "id": "SC_4",
+    "type": "消费者",
+    "label": "节点_4",
+    "attributes": {
+      "name": "企业_4",
+      "region": "华东",
+      "capacity": 1800,
+      "risk_score": 3.0
+    }
+  },
+  {
+    "id": "SC_5",
+    "type": "原材料供应商",
+    "label": "节点_5",
+    "attributes": {
+      "name": "企业_5",
+      "region": "华南",
+      "capacity": 2000,
+      "risk_score": 3.5
+    }
+  },
+  {
+    "id": "SC_6",
+    "type": "制造商",
+    "label": "节点_6",
+    "attributes": {
+      "name": "企业_6",
+      "region": "华北",
+      "capacity": 2200,
+      "risk_score": 4.0
+    }
+  },
+  {
+    "id": "SC_7",
+    "type": "分销商",
+    "label": "节点_7",
+    "attributes": {
+      "name": "企业_7",
+      "region": "西南",
+      "capacity": 2400,
+      "risk_score": 4.5
+    }
+  },
+  {
+    "id": "SC_8",
+    "type": "零售商",
+    "label": "节点_8",
+    "attributes": {
+      "name": "企业_8",
+      "region": "华东",
+      "capacity": 2600,
+      "risk_score": 5.0
+    }
+  },
+  {
+    "id": "SC_9",
+    "type": "消费者",
+    "label": "节点_9",
+    "attributes": {
+      "name": "企业_9",
+      "region": "华南",
+      "capacity": 2800,
+      "risk_score": 5.5
+    }
+  },
+  {
+    "id": "SC_10",
+    "type": "原材料供应商",
+    "label": "节点_10",
+    "attributes": {
+      "name": "企业_10",
+      "region": "华北",
+      "capacity": 3000,
+      "risk_score": 1.0
+    }
+  },
+  {
+    "id": "SC_11",
+    "type": "制造商",
+    "label": "节点_11",
+    "attributes": {
+      "name": "企业_11",
+      "region": "西南",
+      "capacity": 3200,
+      "risk_score": 1.5
+    }
+  },
+  {
+    "id": "SC_12",
+    "type": "分销商",
+    "label": "节点_12",
+    "attributes": {
+      "name": "企业_12",
+      "region": "华东",
+      "capacity": 3400,
+      "risk_score": 2.0
+    }
+  },
+  {
+    "id": "SC_13",
+    "type": "零售商",
+    "label": "节点_13",
+    "attributes": {
+      "name": "企业_13",
+      "region": "华南",
+      "capacity": 3600,
+      "risk_score": 2.5
+    }
+  },
+  {
+    "id": "SC_14",
+    "type": "消费者",
+    "label": "节点_14",
+    "attributes": {
+      "name": "企业_14",
+      "region": "华北",
+      "capacity": 3800,
+      "risk_score": 3.0
+    }
+  },
+  {
+    "id": "SC_15",
+    "type": "原材料供应商",
+    "label": "节点_15",
+    "attributes": {
+      "name": "企业_15",
+      "region": "西南",
+      "capacity": 4000,
+      "risk_score": 3.5
+    }
+  },
+  {
+    "id": "SC_16",
+    "type": "制造商",
+    "label": "节点_16",
+    "attributes": {
+      "name": "企业_16",
+      "region": "华东",
+      "capacity": 4200,
+      "risk_score": 4.0
+    }
+  },
+  {
+    "id": "SC_17",
+    "type": "分销商",
+    "label": "节点_17",
+    "attributes": {
+      "name": "企业_17",
+      "region": "华南",
+      "capacity": 4400,
+      "risk_score": 4.5
+    }
+  },
+  {
+    "id": "SC_18",
+    "type": "零售商",
+    "label": "节点_18",
+    "attributes": {
+      "name": "企业_18",
+      "region": "华北",
+      "capacity": 4600,
+      "risk_score": 5.0
+    }
+  },
+  {
+    "id": "SC_19",
+    "type": "消费者",
+    "label": "节点_19",
+    "attributes": {
+      "name": "企业_19",
+      "region": "西南",
+      "capacity": 4800,
+      "risk_score": 5.5
+    }
+  },
+  {
+    "id": "SC_20",
+    "type": "原材料供应商",
+    "label": "节点_20",
+    "attributes": {
+      "name": "企业_20",
+      "region": "华东",
+      "capacity": 5000,
+      "risk_score": 1.0
+    }
+  },
+  {
+    "id": "SC_21",
+    "type": "制造商",
+    "label": "节点_21",
+    "attributes": {
+      "name": "企业_21",
+      "region": "华南",
+      "capacity": 5200,
+      "risk_score": 1.5
+    }
+  },
+  {
+    "id": "SC_22",
+    "type": "分销商",
+    "label": "节点_22",
+    "attributes": {
+      "name": "企业_22",
+      "region": "华北",
+      "capacity": 5400,
+      "risk_score": 2.0
+    }
+  },
+  {
+    "id": "SC_23",
+    "type": "零售商",
+    "label": "节点_23",
+    "attributes": {
+      "name": "企业_23",
+      "region": "西南",
+      "capacity": 5600,
+      "risk_score": 2.5
+    }
+  },
+  {
+    "id": "SC_24",
+    "type": "消费者",
+    "label": "节点_24",
+    "attributes": {
+      "name": "企业_24",
+      "region": "华东",
+      "capacity": 5800,
+      "risk_score": 3.0
+    }
+  },
+  {
+    "id": "SC_25",
+    "type": "原材料供应商",
+    "label": "节点_25",
+    "attributes": {
+      "name": "企业_25",
+      "region": "华南",
+      "capacity": 6000,
+      "risk_score": 3.5
+    }
+  }
+]

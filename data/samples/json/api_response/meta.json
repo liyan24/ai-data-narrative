@@ -1,0 +1,105 @@
+{
+  "data_type": "json",
+  "title": "内容平台API分页响应",
+  "description": "某内容平台的文章列表API响应，包含分页元数据及嵌套的文章、作者、标签和互动指标。",
+  "schema": {
+    "root_type": "object",
+    "keys": {
+      "status": {
+        "type": "categorical",
+        "description": "请求状态",
+        "values": [
+          "success",
+          "error"
+        ]
+      },
+      "pagination": {
+        "type": "object",
+        "description": "分页元数据",
+        "keys": {
+          "page": {
+            "type": "integer",
+            "description": "当前页码"
+          },
+          "page_size": {
+            "type": "integer",
+            "description": "每页条数"
+          },
+          "total": {
+            "type": "integer",
+            "description": "总记录数"
+          },
+          "total_pages": {
+            "type": "integer",
+            "description": "总页数"
+          }
+        }
+      },
+      "data": {
+        "type": "array",
+        "description": "文章列表",
+        "item_schema": {
+          "type": "object",
+          "keys": {
+            "id": {
+              "type": "integer",
+              "description": "文章ID"
+            },
+            "title": {
+              "type": "string",
+              "description": "文章标题"
+            },
+            "author": {
+              "type": "object",
+              "description": "作者信息",
+              "keys": {
+                "id": {
+                  "type": "integer",
+                  "description": "作者ID"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "作者名"
+                },
+                "level": {
+                  "type": "categorical",
+                  "description": "作者等级",
+                  "values": [
+                    "初级",
+                    "中级",
+                    "高级"
+                  ]
+                }
+              }
+            },
+            "tags": {
+              "type": "array",
+              "description": "文章标签",
+              "item_schema": {
+                "type": "string"
+              }
+            },
+            "metrics": {
+              "type": "object",
+              "description": "互动指标",
+              "keys": {
+                "views": {
+                  "type": "integer",
+                  "description": "浏览量"
+                },
+                "likes": {
+                  "type": "integer",
+                  "description": "点赞数"
+                },
+                "comments": {
+                  "type": "integer",
+                  "description": "评论数"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

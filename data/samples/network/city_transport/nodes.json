@@ -1,0 +1,227 @@
+[
+  {
+    "id": "ST_1",
+    "type": "公交站",
+    "label": "站点_1",
+    "attributes": {
+      "name": "站点名称_1",
+      "lat": 39.91,
+      "lng": 116.41000000000001,
+      "daily_passengers": 15000,
+      "lines": [
+        "线路_2",
+        "线路_3"
+      ]
+    }
+  },
+  {
+    "id": "ST_2",
+    "type": "枢纽站",
+    "label": "站点_2",
+    "attributes": {
+      "name": "站点名称_2",
+      "lat": 39.92,
+      "lng": 116.42,
+      "daily_passengers": 20000,
+      "lines": [
+        "线路_3",
+        "线路_4"
+      ]
+    }
+  },
+  {
+    "id": "ST_3",
+    "type": "地铁站",
+    "label": "站点_3",
+    "attributes": {
+      "name": "站点名称_3",
+      "lat": 39.93,
+      "lng": 116.43,
+      "daily_passengers": 25000,
+      "lines": [
+        "线路_4",
+        "线路_5"
+      ]
+    }
+  },
+  {
+    "id": "ST_4",
+    "type": "公交站",
+    "label": "站点_4",
+    "attributes": {
+      "name": "站点名称_4",
+      "lat": 39.94,
+      "lng": 116.44000000000001,
+      "daily_passengers": 30000,
+      "lines": [
+        "线路_5",
+        "线路_1"
+      ]
+    }
+  },
+  {
+    "id": "ST_5",
+    "type": "枢纽站",
+    "label": "站点_5",
+    "attributes": {
+      "name": "站点名称_5",
+      "lat": 39.949999999999996,
+      "lng": 116.45,
+      "daily_passengers": 35000,
+      "lines": [
+        "线路_1",
+        "线路_2"
+      ]
+    }
+  },
+  {
+    "id": "ST_6",
+    "type": "地铁站",
+    "label": "站点_6",
+    "attributes": {
+      "name": "站点名称_6",
+      "lat": 39.96,
+      "lng": 116.46000000000001,
+      "daily_passengers": 40000,
+      "lines": [
+        "线路_2",
+        "线路_3"
+      ]
+    }
+  },
+  {
+    "id": "ST_7",
+    "type": "公交站",
+    "label": "站点_7",
+    "attributes": {
+      "name": "站点名称_7",
+      "lat": 39.97,
+      "lng": 116.47,
+      "daily_passengers": 45000,
+      "lines": [
+        "线路_3",
+        "线路_4"
+      ]
+    }
+  },
+  {
+    "id": "ST_8",
+    "type": "枢纽站",
+    "label": "站点_8",
+    "attributes": {
+      "name": "站点名称_8",
+      "lat": 39.98,
+      "lng": 116.48,
+      "daily_passengers": 50000,
+      "lines": [
+        "线路_4",
+        "线路_5"
+      ]
+    }
+  },
+  {
+    "id": "ST_9",
+    "type": "地铁站",
+    "label": "站点_9",
+    "attributes": {
+      "name": "站点名称_9",
+      "lat": 39.99,
+      "lng": 116.49000000000001,
+      "daily_passengers": 55000,
+      "lines": [
+        "线路_5",
+        "线路_1"
+      ]
+    }
+  },
+  {
+    "id": "ST_10",
+    "type": "公交站",
+    "label": "站点_10",
+    "attributes": {
+      "name": "站点名称_10",
+      "lat": 40.0,
+      "lng": 116.5,
+      "daily_passengers": 60000,
+      "lines": [
+        "线路_1",
+        "线路_2"
+      ]
+    }
+  },
+  {
+    "id": "ST_11",
+    "type": "枢纽站",
+    "label": "站点_11",
+    "attributes": {
+      "name": "站点名称_11",
+      "lat": 40.01,
+      "lng": 116.51,
+      "daily_passengers": 65000,
+      "lines": [
+        "线路_2",
+        "线路_3"
+      ]
+    }
+  },
+  {
+    "id": "ST_12",
+    "type": "地铁站",
+    "label": "站点_12",
+    "attributes": {
+      "name": "站点名称_12",
+      "lat": 40.019999999999996,
+      "lng": 116.52000000000001,
+      "daily_passengers": 70000,
+      "lines": [
+        "线路_3",
+        "线路_4"
+      ]
+    }
+  },
+  {
+    "id": "ST_13",
+    "type": "公交站",
+    "label": "站点_13",
+    "attributes": {
+      "name": "站点名称_13",
+      "lat": 40.03,
+      "lng": 116.53,
+      "daily_passengers": 75000,
+      "lines": [
+        "线路_4",
+        "线路_5"
+      ]
+    }
+  },
+  {
+    "id": "ST_14",
+    "type": "枢纽站",
+    "label": "站点_14",
+    "attributes": {
+      "name": "站点名称_14",
+      "lat": 40.04,
+      "lng": 116.54,
+      "daily_passengers": 80000,
+      "lines": [
+        "线路_5",
+        "线路_1"
+      ]
+    }
+  },
+  {
+    "id": "ST_15",
+    "type": "地铁站",
+    "label": "站点_15",
+    "attributes": {
+      "name": "站点名称_15",
+      "lat": 40.05,
+      "lng": 116.55000000000001,
+      "daily_passengers": 85000,
+      "lines": [
+        "线路_1",
+        "线路_2"
+      ]
+    }
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "data_type": "json",
+  "title": "用户行为事件日志",
+  "description": "50条用户行为事件，记录用户在网站上的页面浏览、点击、加购、购买和搜索行为，包含用户设备、地理位置及事件属性。",
+  "schema": {
+    "root_type": "array",
+    "item_meaning": "单次用户交互事件",
+    "keys": {
+      "event_id": {
+        "type": "string",
+        "description": "全局唯一事件ID",
+        "role": "primary_key"
+      },
+      "timestamp": {
+        "type": "datetime",
+        "description": "事件发生的ISO8601时间戳",
+        "format": "ISO8601"
+      },
+      "user": {
+        "type": "object",
+        "description": "触发事件的用户及设备信息",
+        "keys": {
+          "user_id": {
+            "type": "string",
+            "description": "用户唯一标识"
+          },
+          "device": {
+            "type": "object",
+            "description": "用户使用的设备信息",
+            "keys": {
+              "type": {
+                "type": "categorical",
+                "description": "设备类型",
+                "values": [
+                  "mobile",
+                  "desktop",
+                  "tablet"
+                ]
+              },
+              "os": {
+                "type": "categorical",
+                "description": "操作系统",
+                "values": [
+                  "iOS",
+                  "Android",
+                  "Windows",
+                  "macOS"
+                ]
+              },
+              "browser": {
+                "type": "categorical",
+                "description": "浏览器",
+                "values": [
+                  "Chrome",
+                  "Safari",
+                  "Firefox"
+                ]
+              }
+            }
+          },
+          "location": {
+            "type": "object",
+            "description": "用户地理位置",
+            "keys": {
+              "country": {
+                "type": "string",
+                "description": "国家"
+              },
+              "province": {
+                "type": "categorical",
+                "description": "省份",
+                "values": [
+                  "北京",
+                  "上海",
+                  "广东",
+                  "浙江"
+                ]
+              },
+              "city": {
+                "type": "categorical",
+                "description": "城市",
+                "values": [
+                  "北京",
+                  "上海",
+                  "广州",
+                  "深圳",
+                  "杭州"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "event": {
+        "type": "object",
+        "description": "事件本身的详细信息",
+        "keys": {
+          "type": {
+            "type": "categorical",
+            "description": "事件类型",
+            "values": [
+              "page_view",
+              "click",
+              "add_to_cart",
+              "purchase",
+              "search"
+            ]
+          },
+          "page": {
+            "type": "object",
+            "description": "页面信息",
+            "keys": {
+              "path": {
+                "type": "string",
+                "description": "页面路径"
+              },
+              "referrer": {
+                "type": "categorical",
+                "description": "来源",
+                "values": [
+                  "google",
+                  "baidu",
+                  "direct",
+                  "wechat"
+                ]
+              }
+            }
+          },
+          "properties": {
+            "type": "object",
+            "description": "事件的量化属性",
+            "keys": {
+              "duration_sec": {
+                "type": "numeric",
+                "description": "页面停留时长",
+                "unit": "秒"
+              },
+              "scroll_depth": {
+                "type": "numeric",
+                "description": "页面滚动深度",
+                "unit": "比例",
+                "range": [
+                  0,
+                  1
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

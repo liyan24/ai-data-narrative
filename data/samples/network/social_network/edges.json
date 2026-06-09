@@ -1,0 +1,551 @@
+[
+  {
+    "source": "U_1",
+    "target": "U_2",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_2",
+    "target": "U_3",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_3",
+    "target": "U_4",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_3",
+    "target": "U_9",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_4",
+    "target": "U_5",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_5",
+    "target": "U_6",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_5",
+    "target": "U_16",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_6",
+    "target": "U_7",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_6",
+    "target": "U_12",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_7",
+    "target": "U_8",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_8",
+    "target": "U_9",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_9",
+    "target": "U_10",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_9",
+    "target": "U_15",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_10",
+    "target": "U_11",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_10",
+    "target": "U_21",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_11",
+    "target": "U_12",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_12",
+    "target": "U_13",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_12",
+    "target": "U_18",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_13",
+    "target": "U_14",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_14",
+    "target": "U_15",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_15",
+    "target": "U_16",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_15",
+    "target": "U_21",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_15",
+    "target": "U_26",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_16",
+    "target": "U_17",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_17",
+    "target": "U_18",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_18",
+    "target": "U_19",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_18",
+    "target": "U_24",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_19",
+    "target": "U_20",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_20",
+    "target": "U_21",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_20",
+    "target": "U_31",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_21",
+    "target": "U_22",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_21",
+    "target": "U_27",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_22",
+    "target": "U_23",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_23",
+    "target": "U_24",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_24",
+    "target": "U_25",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_24",
+    "target": "U_30",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_25",
+    "target": "U_26",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_25",
+    "target": "U_36",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_26",
+    "target": "U_27",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_27",
+    "target": "U_28",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_27",
+    "target": "U_33",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_28",
+    "target": "U_29",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_29",
+    "target": "U_30",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_30",
+    "target": "U_31",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_30",
+    "target": "U_36",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_30",
+    "target": "U_1",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_31",
+    "target": "U_32",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_32",
+    "target": "U_33",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_33",
+    "target": "U_34",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_33",
+    "target": "U_39",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_34",
+    "target": "U_35",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_35",
+    "target": "U_36",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_35",
+    "target": "U_6",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  },
+  {
+    "source": "U_36",
+    "target": "U_37",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_36",
+    "target": "U_2",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_37",
+    "target": "U_38",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_38",
+    "target": "U_39",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_39",
+    "target": "U_40",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_39",
+    "target": "U_5",
+    "type": "互动",
+    "properties": {
+      "weight": 5,
+      "count": 20
+    }
+  },
+  {
+    "source": "U_40",
+    "target": "U_1",
+    "type": "关注",
+    "properties": {
+      "weight": 1,
+      "since": "2024-01-01"
+    }
+  },
+  {
+    "source": "U_40",
+    "target": "U_11",
+    "type": "推荐",
+    "properties": {
+      "weight": 2,
+      "confidence": 0.85
+    }
+  }
+]

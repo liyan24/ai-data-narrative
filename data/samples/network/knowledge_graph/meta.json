@@ -1,0 +1,138 @@
+{
+  "data_type": "network",
+  "title": "企业知识图谱",
+  "description": "20个实体（人物、公司、产品、行业）及关联/从属关系，用于企业情报分析。",
+  "schema": {
+    "node_types": {
+      "人物": {
+        "description": "企业相关个人",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "姓名"
+          },
+          "description": {
+            "type": "string",
+            "description": "人物简介"
+          },
+          "source": {
+            "type": "categorical",
+            "description": "数据来源",
+            "values": [
+              "维基百科",
+              "企业年报",
+              "新闻报道",
+              "专利库"
+            ]
+          }
+        }
+      },
+      "公司": {
+        "description": "工商注册企业",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "公司名"
+          },
+          "description": {
+            "type": "string",
+            "description": "企业简介"
+          },
+          "source": {
+            "type": "categorical",
+            "description": "数据来源",
+            "values": [
+              "维基百科",
+              "企业年报",
+              "新闻报道",
+              "专利库"
+            ]
+          }
+        }
+      },
+      "产品": {
+        "description": "公司推出的产品",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "产品名"
+          },
+          "description": {
+            "type": "string",
+            "description": "产品介绍"
+          },
+          "source": {
+            "type": "categorical",
+            "description": "数据来源",
+            "values": [
+              "维基百科",
+              "企业年报",
+              "新闻报道",
+              "专利库"
+            ]
+          }
+        }
+      },
+      "行业": {
+        "description": "行业分类",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "行业名称"
+          },
+          "description": {
+            "type": "string",
+            "description": "行业描述"
+          },
+          "source": {
+            "type": "categorical",
+            "description": "数据来源",
+            "values": [
+              "维基百科",
+              "企业年报",
+              "新闻报道",
+              "专利库"
+            ]
+          }
+        }
+      }
+    },
+    "edge_types": {
+      "关联": {
+        "description": "两个实体存在语义关联",
+        "directed": true,
+        "properties": {
+          "relation": {
+            "type": "categorical",
+            "description": "具体关联类型",
+            "values": [
+              "创始人",
+              "竞品",
+              "供应链",
+              "投资"
+            ]
+          },
+          "strength": {
+            "type": "numeric",
+            "description": "关联强度",
+            "range": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "从属": {
+        "description": "实体A从属于实体B",
+        "directed": true,
+        "properties": {
+          "since": {
+            "type": "integer",
+            "description": "从属起始年份",
+            "unit": "年"
+          }
+        }
+      }
+    }
+  }
+}

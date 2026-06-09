@@ -1,0 +1,203 @@
+{
+  "data_type": "network",
+  "title": "制造业供应链网络",
+  "description": "25个供应链节点（原材料商到消费者）及供应/合作关系，含产能和风险评分。",
+  "schema": {
+    "node_types": {
+      "原材料供应商": {
+        "description": "提供上游原材料的企业",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "企业名称"
+          },
+          "region": {
+            "type": "categorical",
+            "description": "所在区域",
+            "values": [
+              "华东",
+              "华南",
+              "华北",
+              "西南"
+            ]
+          },
+          "capacity": {
+            "type": "integer",
+            "description": "年产能",
+            "unit": "吨"
+          },
+          "risk_score": {
+            "type": "numeric",
+            "description": "供应链风险评分",
+            "range": [
+              1,
+              5
+            ]
+          }
+        }
+      },
+      "制造商": {
+        "description": "将原材料加工成成品的企业",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "企业名称"
+          },
+          "region": {
+            "type": "categorical",
+            "description": "所在区域",
+            "values": [
+              "华东",
+              "华南",
+              "华北",
+              "西南"
+            ]
+          },
+          "capacity": {
+            "type": "integer",
+            "description": "年产能",
+            "unit": "件"
+          },
+          "risk_score": {
+            "type": "numeric",
+            "description": "供应链风险评分",
+            "range": [
+              1,
+              5
+            ]
+          }
+        }
+      },
+      "分销商": {
+        "description": "负责区域分销的中间商",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "企业名称"
+          },
+          "region": {
+            "type": "categorical",
+            "description": "所在区域",
+            "values": [
+              "华东",
+              "华南",
+              "华北",
+              "西南"
+            ]
+          },
+          "capacity": {
+            "type": "integer",
+            "description": "年分销能力",
+            "unit": "件"
+          },
+          "risk_score": {
+            "type": "numeric",
+            "description": "供应链风险评分",
+            "range": [
+              1,
+              5
+            ]
+          }
+        }
+      },
+      "零售商": {
+        "description": "面向终端消费者的销售终端",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "企业名称"
+          },
+          "region": {
+            "type": "categorical",
+            "description": "所在区域",
+            "values": [
+              "华东",
+              "华南",
+              "华北",
+              "西南"
+            ]
+          },
+          "capacity": {
+            "type": "integer",
+            "description": "年销售能力",
+            "unit": "件"
+          },
+          "risk_score": {
+            "type": "numeric",
+            "description": "供应链风险评分",
+            "range": [
+              1,
+              5
+            ]
+          }
+        }
+      },
+      "消费者": {
+        "description": "最终购买产品的用户群体",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "消费者群体名称"
+          },
+          "region": {
+            "type": "categorical",
+            "description": "所在区域",
+            "values": [
+              "华东",
+              "华南",
+              "华北",
+              "西南"
+            ]
+          },
+          "capacity": {
+            "type": "integer",
+            "description": "年消费需求量",
+            "unit": "件"
+          },
+          "risk_score": {
+            "type": "numeric",
+            "description": "消费风险评分",
+            "range": [
+              1,
+              5
+            ]
+          }
+        }
+      }
+    },
+    "edge_types": {
+      "供应": {
+        "description": "上游向下游供货",
+        "directed": true,
+        "properties": {
+          "volume": {
+            "type": "integer",
+            "description": "年供货量",
+            "unit": "件/吨"
+          },
+          "lead_time_days": {
+            "type": "integer",
+            "description": "供货周期",
+            "unit": "天"
+          }
+        }
+      },
+      "合作": {
+        "description": "企业间的战略合作关系",
+        "directed": false,
+        "properties": {
+          "contract_value": {
+            "type": "integer",
+            "description": "合同金额",
+            "unit": "元"
+          },
+          "duration_years": {
+            "type": "integer",
+            "description": "合同期限",
+            "unit": "年"
+          }
+        }
+      }
+    }
+  }
+}

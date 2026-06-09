@@ -1,0 +1,262 @@
+[
+  {
+    "id": "PAPER_1",
+    "type": "会议论文",
+    "label": "论文_1",
+    "attributes": {
+      "title": "论文标题_1",
+      "author": "作者_1",
+      "year": 2021,
+      "citations": 3,
+      "field": "数据库",
+      "impact_factor": 2.5
+    }
+  },
+  {
+    "id": "PAPER_2",
+    "type": "综述",
+    "label": "论文_2",
+    "attributes": {
+      "title": "论文标题_2",
+      "author": "作者_2",
+      "year": 2022,
+      "citations": 6,
+      "field": "网络安全",
+      "impact_factor": 3.0
+    }
+  },
+  {
+    "id": "PAPER_3",
+    "type": "期刊论文",
+    "label": "论文_3",
+    "attributes": {
+      "title": "论文标题_3",
+      "author": "作者_3",
+      "year": 2023,
+      "citations": 9,
+      "field": "图形学",
+      "impact_factor": 3.5
+    }
+  },
+  {
+    "id": "PAPER_4",
+    "type": "会议论文",
+    "label": "论文_4",
+    "attributes": {
+      "title": "论文标题_4",
+      "author": "作者_4",
+      "year": 2024,
+      "citations": 12,
+      "field": "NLP",
+      "impact_factor": 4.0
+    }
+  },
+  {
+    "id": "PAPER_5",
+    "type": "综述",
+    "label": "论文_5",
+    "attributes": {
+      "title": "论文标题_5",
+      "author": "作者_5",
+      "year": 2020,
+      "citations": 15,
+      "field": "AI",
+      "impact_factor": 4.5
+    }
+  },
+  {
+    "id": "PAPER_6",
+    "type": "期刊论文",
+    "label": "论文_6",
+    "attributes": {
+      "title": "论文标题_6",
+      "author": "作者_6",
+      "year": 2021,
+      "citations": 18,
+      "field": "数据库",
+      "impact_factor": 5.0
+    }
+  },
+  {
+    "id": "PAPER_7",
+    "type": "会议论文",
+    "label": "论文_7",
+    "attributes": {
+      "title": "论文标题_7",
+      "author": "作者_7",
+      "year": 2022,
+      "citations": 21,
+      "field": "网络安全",
+      "impact_factor": 5.5
+    }
+  },
+  {
+    "id": "PAPER_8",
+    "type": "综述",
+    "label": "论文_8",
+    "attributes": {
+      "title": "论文标题_8",
+      "author": "作者_8",
+      "year": 2023,
+      "citations": 24,
+      "field": "图形学",
+      "impact_factor": 6.0
+    }
+  },
+  {
+    "id": "PAPER_9",
+    "type": "期刊论文",
+    "label": "论文_9",
+    "attributes": {
+      "title": "论文标题_9",
+      "author": "作者_9",
+      "year": 2024,
+      "citations": 27,
+      "field": "NLP",
+      "impact_factor": 6.5
+    }
+  },
+  {
+    "id": "PAPER_10",
+    "type": "会议论文",
+    "label": "论文_10",
+    "attributes": {
+      "title": "论文标题_10",
+      "author": "作者_10",
+      "year": 2020,
+      "citations": 30,
+      "field": "AI",
+      "impact_factor": 2.0
+    }
+  },
+  {
+    "id": "PAPER_11",
+    "type": "综述",
+    "label": "论文_11",
+    "attributes": {
+      "title": "论文标题_11",
+      "author": "作者_11",
+      "year": 2021,
+      "citations": 33,
+      "field": "数据库",
+      "impact_factor": 2.5
+    }
+  },
+  {
+    "id": "PAPER_12",
+    "type": "期刊论文",
+    "label": "论文_12",
+    "attributes": {
+      "title": "论文标题_12",
+      "author": "作者_12",
+      "year": 2022,
+      "citations": 36,
+      "field": "网络安全",
+      "impact_factor": 3.0
+    }
+  },
+  {
+    "id": "PAPER_13",
+    "type": "会议论文",
+    "label": "论文_13",
+    "attributes": {
+      "title": "论文标题_13",
+      "author": "作者_13",
+      "year": 2023,
+      "citations": 39,
+      "field": "图形学",
+      "impact_factor": 3.5
+    }
+  },
+  {
+    "id": "PAPER_14",
+    "type": "综述",
+    "label": "论文_14",
+    "attributes": {
+      "title": "论文标题_14",
+      "author": "作者_14",
+      "year": 2024,
+      "citations": 42,
+      "field": "NLP",
+      "impact_factor": 4.0
+    }
+  },
+  {
+    "id": "PAPER_15",
+    "type": "期刊论文",
+    "label": "论文_15",
+    "attributes": {
+      "title": "论文标题_15",
+      "author": "作者_15",
+      "year": 2020,
+      "citations": 45,
+      "field": "AI",
+      "impact_factor": 4.5
+    }
+  },
+  {
+    "id": "PAPER_16",
+    "type": "会议论文",
+    "label": "论文_16",
+    "attributes": {
+      "title": "论文标题_16",
+      "author": "作者_16",
+      "year": 2021,
+      "citations": 48,
+      "field": "数据库",
+      "impact_factor": 5.0
+    }
+  },
+  {
+    "id": "PAPER_17",
+    "type": "综述",
+    "label": "论文_17",
+    "attributes": {
+      "title": "论文标题_17",
+      "author": "作者_17",
+      "year": 2022,
+      "citations": 51,
+      "field": "网络安全",
+      "impact_factor": 5.5
+    }
+  },
+  {
+    "id": "PAPER_18",
+    "type": "期刊论文",
+    "label": "论文_18",
+    "attributes": {
+      "title": "论文标题_18",
+      "author": "作者_18",
+      "year": 2023,
+      "citations": 54,
+      "field": "图形学",
+      "impact_factor": 6.0
+    }
+  },
+  {
+    "id": "PAPER_19",
+    "type": "会议论文",
+    "label": "论文_19",
+    "attributes": {
+      "title": "论文标题_19",
+      "author": "作者_19",
+      "year": 2024,
+      "citations": 57,
+      "field": "NLP",
+      "impact_factor": 6.5
+    }
+  },
+  {
+    "id": "PAPER_20",
+    "type": "综述",
+    "label": "论文_20",
+    "attributes": {
+      "title": "论文标题_20",
+      "author": "作者_20",
+      "year": 2020,
+      "citations": 60,
+      "field": "AI",
+      "impact_factor": 2.0
+    }
+  }
+]

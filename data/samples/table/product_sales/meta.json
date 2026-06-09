@@ -1,0 +1,80 @@
+{
+  "data_type": "table",
+  "title": "产品季度销售数据",
+  "description": "某公司50款产品在四个季度的销量、定价、成本及库存数据。",
+  "schema": {
+    "row_meaning": "每一款独立SKU产品",
+    "column_meaning": "产品的销售与财务属性",
+    "columns": [
+      {
+        "name": "产品编号",
+        "description": "SKU唯一编码",
+        "type": "string",
+        "role": "primary_key"
+      },
+      {
+        "name": "产品名称",
+        "description": "内部命名",
+        "type": "string"
+      },
+      {
+        "name": "类别",
+        "description": "所属商品大类",
+        "type": "categorical",
+        "values": [
+          "电子",
+          "家居",
+          "服饰",
+          "食品",
+          "美妆"
+        ]
+      },
+      {
+        "name": "Q1销量",
+        "description": "第一季度销售数量",
+        "type": "integer",
+        "unit": "件",
+        "aggregation": "sum"
+      },
+      {
+        "name": "Q2销量",
+        "description": "第二季度销售数量",
+        "type": "integer",
+        "unit": "件",
+        "aggregation": "sum"
+      },
+      {
+        "name": "Q3销量",
+        "description": "第三季度销售数量",
+        "type": "integer",
+        "unit": "件",
+        "aggregation": "sum"
+      },
+      {
+        "name": "Q4销量",
+        "description": "第四季度销售数量",
+        "type": "integer",
+        "unit": "件",
+        "aggregation": "sum"
+      },
+      {
+        "name": "单价",
+        "description": "对外零售价",
+        "type": "numeric",
+        "unit": "元"
+      },
+      {
+        "name": "成本",
+        "description": "生产成本",
+        "type": "numeric",
+        "unit": "元"
+      },
+      {
+        "name": "库存",
+        "description": "当前可售库存",
+        "type": "integer",
+        "unit": "件"
+      }
+    ]
+  }
+}

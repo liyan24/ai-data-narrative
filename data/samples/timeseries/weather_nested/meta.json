@@ -1,0 +1,75 @@
+{
+  "data_type": "timeseries",
+  "title": "城市气象日数据（含嵌套JSON字段）",
+  "description": "某城市30天气象记录。温度字段为JSON格式（含最高/最低/平均），降水字段为JSON格式（含概率和量级）。",
+  "schema": {
+    "time_field": {
+      "name": "日期",
+      "description": "预报日期",
+      "format": "YYYY-MM-DD",
+      "period": "日"
+    },
+    "value_fields": [
+      {
+        "name": "温度",
+        "description": "当日温度统计，JSON格式内含最高/最低/平均",
+        "type": "json",
+        "inner_schema": {
+          "最高": {
+            "type": "numeric",
+            "unit": "摄氏度"
+          },
+          "最低": {
+            "type": "numeric",
+            "unit": "摄氏度"
+          },
+          "平均": {
+            "type": "numeric",
+            "unit": "摄氏度"
+          }
+        }
+      },
+      {
+        "name": "降水",
+        "description": "当日降水信息，JSON格式内含概率和量级",
+        "type": "json",
+        "inner_schema": {
+          "概率": {
+            "type": "numeric",
+            "unit": "比例",
+            "range": [
+              0,
+              1
+            ]
+          },
+          "量级": {
+            "type": "categorical",
+            "values": [
+              "无",
+              "小雨",
+              "中雨",
+              "大雨"
+            ]
+          }
+        }
+      },
+      {
+        "name": "风速",
+        "description": "当日平均风速",
+        "type": "numeric",
+        "unit": "m/s"
+      },
+      {
+        "name": "空气质量",
+        "description": "当日AQI等级",
+        "type": "categorical",
+        "values": [
+          "优",
+          "良",
+          "轻度污染",
+          "中度污染"
+        ]
+      }
+    ]
+  }
+}

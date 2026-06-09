@@ -1,0 +1,57 @@
+{
+  "app_name": "智慧零售系统",
+  "version": "2.1.0",
+  "environment": "production",
+  "database": {
+    "host": "db.example.com",
+    "port": 5432,
+    "name": "retail_db",
+    "pool": {
+      "min": 5,
+      "max": 50,
+      "timeout_sec": 30
+    }
+  },
+  "cache": {
+    "provider": "redis",
+    "host": "redis.example.com",
+    "port": 6379,
+    "ttl": {
+      "session": 3600,
+      "product": 300,
+      "order": 60
+    }
+  },
+  "features": {
+    "recommendation": {
+      "enabled": true,
+      "algorithm": "collaborative_filtering",
+      "params": {
+        "k": 10,
+        "similarity": "cosine"
+      }
+    },
+    "ab_test": {
+      "enabled": false,
+      "variants": [
+        "control",
+        "variant_a",
+        "variant_b"
+      ]
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "json",
+    "outputs": [
+      {
+        "type": "console"
+      },
+      {
+        "type": "file",
+        "path": "/var/log/app.log",
+        "rotation": "daily"
+      }
+    ]
+  }
+}

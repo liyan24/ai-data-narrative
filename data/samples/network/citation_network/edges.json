@@ -1,0 +1,202 @@
+[
+  {
+    "source": "PAPER_1",
+    "target": "PAPER_2",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_2",
+    "target": "PAPER_3",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_3",
+    "target": "PAPER_4",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_4",
+    "target": "PAPER_5",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_4",
+    "target": "PAPER_9",
+    "type": "合作",
+    "properties": {
+      "coauthor_count": 3
+    }
+  },
+  {
+    "source": "PAPER_5",
+    "target": "PAPER_6",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_6",
+    "target": "PAPER_7",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_7",
+    "target": "PAPER_8",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_8",
+    "target": "PAPER_9",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_8",
+    "target": "PAPER_13",
+    "type": "合作",
+    "properties": {
+      "coauthor_count": 4
+    }
+  },
+  {
+    "source": "PAPER_9",
+    "target": "PAPER_10",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_10",
+    "target": "PAPER_11",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_11",
+    "target": "PAPER_12",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_12",
+    "target": "PAPER_13",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_12",
+    "target": "PAPER_17",
+    "type": "合作",
+    "properties": {
+      "coauthor_count": 2
+    }
+  },
+  {
+    "source": "PAPER_13",
+    "target": "PAPER_14",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_14",
+    "target": "PAPER_15",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_15",
+    "target": "PAPER_16",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_16",
+    "target": "PAPER_17",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_16",
+    "target": "PAPER_1",
+    "type": "合作",
+    "properties": {
+      "coauthor_count": 3
+    }
+  },
+  {
+    "source": "PAPER_17",
+    "target": "PAPER_18",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_18",
+    "target": "PAPER_19",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_19",
+    "target": "PAPER_20",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_20",
+    "target": "PAPER_1",
+    "type": "引用",
+    "properties": {
+      "citation_count": 1
+    }
+  },
+  {
+    "source": "PAPER_20",
+    "target": "PAPER_5",
+    "type": "合作",
+    "properties": {
+      "coauthor_count": 4
+    }
+  }
+]

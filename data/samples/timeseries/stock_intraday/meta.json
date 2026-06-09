@@ -1,0 +1,45 @@
+{
+  "data_type": "timeseries",
+  "title": "股票日内分时行情",
+  "description": "某科技公司2024年6月1日交易时段（9:30-15:30）的分钟级K线数据，含OHLC及成交量。",
+  "schema": {
+    "time_field": {
+      "name": "时间",
+      "description": "交易分钟",
+      "format": "YYYY-MM-DD HH:MM",
+      "period": "分钟"
+    },
+    "value_fields": [
+      {
+        "name": "开盘价",
+        "description": "该分钟第一笔成交价",
+        "type": "numeric",
+        "unit": "元"
+      },
+      {
+        "name": "最高价",
+        "description": "该分钟内最高成交价",
+        "type": "numeric",
+        "unit": "元"
+      },
+      {
+        "name": "最低价",
+        "description": "该分钟内最低成交价",
+        "type": "numeric",
+        "unit": "元"
+      },
+      {
+        "name": "收盘价",
+        "description": "该分钟最后一笔成交价",
+        "type": "numeric",
+        "unit": "元"
+      },
+      {
+        "name": "成交量",
+        "description": "该分钟成交的总手数",
+        "type": "integer",
+        "unit": "手"
+      }
+    ]
+  }
+}

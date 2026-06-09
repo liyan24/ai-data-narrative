@@ -1,0 +1,142 @@
+[
+  {
+    "data_type": "timeseries",
+    "slug": "sales_daily",
+    "title": "电商每日销售时序数据",
+    "description": "某电商店铺2024年第一季度每日销售核心指标，包含销售额、订单量、客单价及退货率。",
+    "path": "data/samples/timeseries/sales_daily"
+  },
+  {
+    "data_type": "timeseries",
+    "slug": "stock_intraday",
+    "title": "股票日内分时行情",
+    "description": "某科技公司2024年6月1日交易时段（9:30-15:30）的分钟级K线数据，含OHLC及成交量。",
+    "path": "data/samples/timeseries/stock_intraday"
+  },
+  {
+    "data_type": "timeseries",
+    "slug": "sensor_multidevice",
+    "title": "工业传感器多设备时序数据",
+    "description": "3台工业设备24小时连续采集的温度、湿度、压力及振动数据。",
+    "path": "data/samples/timeseries/sensor_multidevice"
+  },
+  {
+    "data_type": "timeseries",
+    "slug": "traffic_source",
+    "title": "网站流量来源分日时序",
+    "description": "某网站30天内按流量来源（5个渠道）拆分的日访问量、跳出率和平均停留时长。",
+    "path": "data/samples/timeseries/traffic_source"
+  },
+  {
+    "data_type": "timeseries",
+    "slug": "weather_nested",
+    "title": "城市气象日数据（含嵌套JSON字段）",
+    "description": "某城市30天气象记录。温度字段为JSON格式（含最高/最低/平均），降水字段为JSON格式（含概率和量级）。",
+    "path": "data/samples/timeseries/weather_nested"
+  },
+  {
+    "data_type": "table",
+    "slug": "employee_info",
+    "title": "企业员工人事档案",
+    "description": "某公司100名员工的完整人事信息，涵盖基础属性、岗位信息及薪酬绩效。",
+    "path": "data/samples/table/employee_info"
+  },
+  {
+    "data_type": "table",
+    "slug": "product_sales",
+    "title": "产品季度销售数据",
+    "description": "某公司50款产品在四个季度的销量、定价、成本及库存数据。",
+    "path": "data/samples/table/product_sales"
+  },
+  {
+    "data_type": "table",
+    "slug": "customer_satisfaction",
+    "title": "客户满意度问卷",
+    "description": "200名客户对5个服务维度的满意度评分及客户属性信息。",
+    "path": "data/samples/table/customer_satisfaction"
+  },
+  {
+    "data_type": "table",
+    "slug": "hospital_patients",
+    "title": "肿瘤血液科住院患者信息",
+    "description": "某医院肿瘤血液科80名住院患者的入院信息、诊断、治疗及费用数据。",
+    "path": "data/samples/table/hospital_patients"
+  },
+  {
+    "data_type": "table",
+    "slug": "ecommerce_orders",
+    "title": "电商平台订单明细",
+    "description": "某电商平台150个订单的交易信息、商品分类、支付与物流状态。",
+    "path": "data/samples/table/ecommerce_orders"
+  },
+  {
+    "data_type": "json",
+    "slug": "user_event_logs",
+    "title": "用户行为事件日志",
+    "description": "50条用户行为事件，记录用户在网站上的页面浏览、点击、加购、购买和搜索行为，包含用户设备、地理位置及事件属性。",
+    "path": "data/samples/json/user_event_logs"
+  },
+  {
+    "data_type": "json",
+    "slug": "product_catalog",
+    "title": "电商平台商品目录",
+    "description": "30个商品的详细信息，包含分类层级、定价折扣、属性规格、评价标签及商家信息。",
+    "path": "data/samples/json/product_catalog"
+  },
+  {
+    "data_type": "json",
+    "slug": "api_response",
+    "title": "内容平台API分页响应",
+    "description": "某内容平台的文章列表API响应，包含分页元数据及嵌套的文章、作者、标签和互动指标。",
+    "path": "data/samples/json/api_response"
+  },
+  {
+    "data_type": "json",
+    "slug": "app_config",
+    "title": "应用系统配置文件",
+    "description": "某零售SaaS系统的运行时配置，包含数据库连接池、缓存策略、功能开关及日志输出配置。",
+    "path": "data/samples/json/app_config"
+  },
+  {
+    "data_type": "json",
+    "slug": "logistics_tracking",
+    "title": "快递物流全程轨迹",
+    "description": "20个快递运单的完整物流轨迹，包含寄收件人信息、商品明细及按时间排序的节点追踪记录。",
+    "path": "data/samples/json/logistics_tracking"
+  },
+  {
+    "data_type": "network",
+    "slug": "social_network",
+    "title": "社交媒体关系网络",
+    "description": "40个用户节点（含普通用户、KOL、商家三种类型）及关注/互动/推荐三种关系边。",
+    "path": "data/samples/network/social_network"
+  },
+  {
+    "data_type": "network",
+    "slug": "knowledge_graph",
+    "title": "企业知识图谱",
+    "description": "20个实体（人物、公司、产品、行业）及关联/从属关系，用于企业情报分析。",
+    "path": "data/samples/network/knowledge_graph"
+  },
+  {
+    "data_type": "network",
+    "slug": "supply_chain",
+    "title": "制造业供应链网络",
+    "description": "25个供应链节点（原材料商到消费者）及供应/合作关系，含产能和风险评分。",
+    "path": "data/samples/network/supply_chain"
+  },
+  {
+    "data_type": "network",
+    "slug": "city_transport",
+    "title": "城市公共交通网络",
+    "description": "15个交通站点（地铁/公交/枢纽）及轨道连接和换乘关系。",
+    "path": "data/samples/network/city_transport"
+  },
+  {
+    "data_type": "network",
+    "slug": "citation_network",
+    "title": "学术论文引用与合作网络",
+    "description": "20篇学术论文（期刊/会议/综述）及引用和合作关系。",
+    "path": "data/samples/network/citation_network"
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "data_type": "json",
+  "title": "电商平台商品目录",
+  "description": "30个商品的详细信息，包含分类层级、定价折扣、属性规格、评价标签及商家信息。",
+  "schema": {
+    "root_type": "array",
+    "item_meaning": "每一个独立商品SKU",
+    "keys": {
+      "sku_id": {
+        "type": "string",
+        "description": "SKU唯一编号",
+        "role": "primary_key"
+      },
+      "name": {
+        "type": "string",
+        "description": "商品名称"
+      },
+      "category": {
+        "type": "object",
+        "description": "商品分类层级",
+        "keys": {
+          "level1": {
+            "type": "categorical",
+            "description": "一级类目",
+            "values": [
+              "电子",
+              "家居",
+              "服饰"
+            ]
+          },
+          "level2": {
+            "type": "categorical",
+            "description": "二级类目",
+            "values": [
+              "手机",
+              "电脑",
+              "家具",
+              "服装"
+            ]
+          }
+        }
+      },
+      "pricing": {
+        "type": "object",
+        "description": "定价与折扣信息",
+        "keys": {
+          "base_price": {
+            "type": "numeric",
+            "description": "原价",
+            "unit": "元"
+          },
+          "discount": {
+            "type": "object",
+            "description": "折扣规则",
+            "keys": {
+              "type": {
+                "type": "categorical",
+                "description": "折扣类型",
+                "values": [
+                  "percent",
+                  "fixed",
+                  "none"
+                ]
+              },
+              "value": {
+                "type": "numeric",
+                "description": "折扣数值"
+              }
+            }
+          },
+          "final_price": {
+            "type": "numeric",
+            "description": "最终售价",
+            "unit": "元"
+          }
+        }
+      },
+      "attributes": {
+        "type": "array",
+        "description": "商品属性规格列表",
+        "item_schema": {
+          "type": "object",
+          "keys": {
+            "key": {
+              "type": "string",
+              "description": "属性名"
+            },
+            "value": {
+              "type": "string",
+              "description": "属性值"
+            }
+          }
+        }
+      },
+      "reviews": {
+        "type": "object",
+        "description": "用户评价汇总",
+        "keys": {
+          "count": {
+            "type": "integer",
+            "description": "评价总数"
+          },
+          "avg_rating": {
+            "type": "numeric",
+            "description": "平均评分",
+            "unit": "分(1-5)",
+            "range": [
+              1,
+              5
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "description": "高频评价标签",
+            "item_schema": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "seller": {
+        "type": "object",
+        "description": "销售商家信息",
+        "keys": {
+          "seller_id": {
+            "type": "string",
+            "description": "商家ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "商家名称"
+          },
+          "rating": {
+            "type": "numeric",
+            "description": "商家评分",
+            "unit": "分(1-5)",
+            "range": [
+              1,
+              5
+            ]
+          }
+        }
+      }
+    }
+  }
+}

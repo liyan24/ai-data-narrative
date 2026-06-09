@@ -1,0 +1,230 @@
+[
+  {
+    "source": "ENT_1",
+    "target": "ENT_2",
+    "type": "关联",
+    "properties": {
+      "relation": "竞品",
+      "strength": 0.6
+    }
+  },
+  {
+    "source": "ENT_2",
+    "target": "ENT_3",
+    "type": "关联",
+    "properties": {
+      "relation": "供应链",
+      "strength": 0.7
+    }
+  },
+  {
+    "source": "ENT_3",
+    "target": "ENT_4",
+    "type": "关联",
+    "properties": {
+      "relation": "投资",
+      "strength": 0.8
+    }
+  },
+  {
+    "source": "ENT_3",
+    "target": "ENT_7",
+    "type": "从属",
+    "properties": {
+      "since": 2013
+    }
+  },
+  {
+    "source": "ENT_4",
+    "target": "ENT_5",
+    "type": "关联",
+    "properties": {
+      "relation": "创始人",
+      "strength": 0.9
+    }
+  },
+  {
+    "source": "ENT_5",
+    "target": "ENT_6",
+    "type": "关联",
+    "properties": {
+      "relation": "竞品",
+      "strength": 0.5
+    }
+  },
+  {
+    "source": "ENT_6",
+    "target": "ENT_7",
+    "type": "关联",
+    "properties": {
+      "relation": "供应链",
+      "strength": 0.6
+    }
+  },
+  {
+    "source": "ENT_6",
+    "target": "ENT_10",
+    "type": "从属",
+    "properties": {
+      "since": 2016
+    }
+  },
+  {
+    "source": "ENT_7",
+    "target": "ENT_8",
+    "type": "关联",
+    "properties": {
+      "relation": "投资",
+      "strength": 0.7
+    }
+  },
+  {
+    "source": "ENT_8",
+    "target": "ENT_9",
+    "type": "关联",
+    "properties": {
+      "relation": "创始人",
+      "strength": 0.8
+    }
+  },
+  {
+    "source": "ENT_9",
+    "target": "ENT_10",
+    "type": "关联",
+    "properties": {
+      "relation": "竞品",
+      "strength": 0.9
+    }
+  },
+  {
+    "source": "ENT_9",
+    "target": "ENT_13",
+    "type": "从属",
+    "properties": {
+      "since": 2019
+    }
+  },
+  {
+    "source": "ENT_10",
+    "target": "ENT_11",
+    "type": "关联",
+    "properties": {
+      "relation": "供应链",
+      "strength": 0.5
+    }
+  },
+  {
+    "source": "ENT_11",
+    "target": "ENT_12",
+    "type": "关联",
+    "properties": {
+      "relation": "投资",
+      "strength": 0.6
+    }
+  },
+  {
+    "source": "ENT_12",
+    "target": "ENT_13",
+    "type": "关联",
+    "properties": {
+      "relation": "创始人",
+      "strength": 0.7
+    }
+  },
+  {
+    "source": "ENT_12",
+    "target": "ENT_16",
+    "type": "从属",
+    "properties": {
+      "since": 2012
+    }
+  },
+  {
+    "source": "ENT_13",
+    "target": "ENT_14",
+    "type": "关联",
+    "properties": {
+      "relation": "竞品",
+      "strength": 0.8
+    }
+  },
+  {
+    "source": "ENT_14",
+    "target": "ENT_15",
+    "type": "关联",
+    "properties": {
+      "relation": "供应链",
+      "strength": 0.9
+    }
+  },
+  {
+    "source": "ENT_15",
+    "target": "ENT_16",
+    "type": "关联",
+    "properties": {
+      "relation": "投资",
+      "strength": 0.5
+    }
+  },
+  {
+    "source": "ENT_15",
+    "target": "ENT_19",
+    "type": "从属",
+    "properties": {
+      "since": 2015
+    }
+  },
+  {
+    "source": "ENT_16",
+    "target": "ENT_17",
+    "type": "关联",
+    "properties": {
+      "relation": "创始人",
+      "strength": 0.6
+    }
+  },
+  {
+    "source": "ENT_17",
+    "target": "ENT_18",
+    "type": "关联",
+    "properties": {
+      "relation": "竞品",
+      "strength": 0.7
+    }
+  },
+  {
+    "source": "ENT_18",
+    "target": "ENT_19",
+    "type": "关联",
+    "properties": {
+      "relation": "供应链",
+      "strength": 0.8
+    }
+  },
+  {
+    "source": "ENT_18",
+    "target": "ENT_2",
+    "type": "从属",
+    "properties": {
+      "since": 2018
+    }
+  },
+  {
+    "source": "ENT_19",
+    "target": "ENT_20",
+    "type": "关联",
+    "properties": {
+      "relation": "投资",
+      "strength": 0.9
+    }
+  },
+  {
+    "source": "ENT_20",
+    "target": "ENT_1",
+    "type": "关联",
+    "properties": {
+      "relation": "创始人",
+      "strength": 0.5
+    }
+  }
+]

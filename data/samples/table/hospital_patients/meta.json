@@ -1,0 +1,96 @@
+{
+  "data_type": "table",
+  "title": "肿瘤血液科住院患者信息",
+  "description": "某医院肿瘤血液科80名住院患者的入院信息、诊断、治疗及费用数据。",
+  "schema": {
+    "row_meaning": "每位住院患者的一次住院记录",
+    "column_meaning": "患者的入院信息、诊断、治疗与费用",
+    "columns": [
+      {
+        "name": "病历号",
+        "description": "院内唯一病历标识",
+        "type": "string",
+        "role": "primary_key"
+      },
+      {
+        "name": "姓名",
+        "description": "患者姓名",
+        "type": "string"
+      },
+      {
+        "name": "性别",
+        "description": "生理性别",
+        "type": "categorical",
+        "values": [
+          "男",
+          "女"
+        ]
+      },
+      {
+        "name": "年龄",
+        "description": "入院时周岁",
+        "type": "integer",
+        "unit": "岁"
+      },
+      {
+        "name": "科室",
+        "description": "收治科室",
+        "type": "categorical",
+        "values": [
+          "肿瘤血液科"
+        ]
+      },
+      {
+        "name": "入院日期",
+        "description": "正式入院日期",
+        "type": "date",
+        "format": "YYYY-MM-DD"
+      },
+      {
+        "name": "主要诊断",
+        "description": "出院主要诊断",
+        "type": "categorical",
+        "values": [
+          "肺癌",
+          "乳腺癌",
+          "白血病",
+          "淋巴瘤",
+          "胃癌"
+        ]
+      },
+      {
+        "name": "住院天数",
+        "description": "本次住院总天数",
+        "type": "integer",
+        "unit": "天"
+      },
+      {
+        "name": "总费用",
+        "description": "住院期间全部医疗费用",
+        "type": "numeric",
+        "unit": "元",
+        "aggregation": "sum"
+      },
+      {
+        "name": "是否手术",
+        "description": "住院期间是否接受手术治疗",
+        "type": "categorical",
+        "values": [
+          "是",
+          "否"
+        ]
+      },
+      {
+        "name": "医保类型",
+        "description": "费用结算的医保类别",
+        "type": "categorical",
+        "values": [
+          "城镇职工",
+          "城乡居民",
+          "商业保险",
+          "自费"
+        ]
+      }
+    ]
+  }
+}

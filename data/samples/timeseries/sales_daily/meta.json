@@ -1,0 +1,51 @@
+{
+  "data_type": "timeseries",
+  "title": "电商每日销售时序数据",
+  "description": "某电商店铺2024年第一季度每日销售核心指标，包含销售额、订单量、客单价及退货率。",
+  "schema": {
+    "time_field": {
+      "name": "日期",
+      "description": "交易发生的日期",
+      "format": "YYYY-MM-DD",
+      "period": "日"
+    },
+    "value_fields": [
+      {
+        "name": "销售额",
+        "description": "当日所有成交订单的总金额",
+        "type": "numeric",
+        "unit": "元",
+        "aggregation": "sum",
+        "statistics": {
+          "min": 4500,
+          "max": 15000,
+          "mean": 8500
+        }
+      },
+      {
+        "name": "订单量",
+        "description": "当日成交的订单笔数",
+        "type": "integer",
+        "unit": "笔",
+        "aggregation": "sum"
+      },
+      {
+        "name": "客单价",
+        "description": "当日每笔订单的平均金额",
+        "type": "numeric",
+        "unit": "元",
+        "formula": "销售额 / 订单量"
+      },
+      {
+        "name": "退货率",
+        "description": "当日退货订单占成交订单的比例",
+        "type": "numeric",
+        "unit": "比例",
+        "range": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}

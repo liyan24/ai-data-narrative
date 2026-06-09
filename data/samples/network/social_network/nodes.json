@@ -1,0 +1,482 @@
+[
+  {
+    "id": "U_1",
+    "type": "KOL",
+    "label": "用户_1",
+    "attributes": {
+      "age": 19,
+      "gender": "女",
+      "city": "上海",
+      "followers": 10,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_2",
+    "type": "商家",
+    "label": "用户_2",
+    "attributes": {
+      "age": 20,
+      "gender": "男",
+      "city": "广州",
+      "followers": 20,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_3",
+    "type": "普通用户",
+    "label": "用户_3",
+    "attributes": {
+      "age": 21,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 30,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_4",
+    "type": "KOL",
+    "label": "用户_4",
+    "attributes": {
+      "age": 22,
+      "gender": "男",
+      "city": "北京",
+      "followers": 40,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_5",
+    "type": "商家",
+    "label": "用户_5",
+    "attributes": {
+      "age": 23,
+      "gender": "女",
+      "city": "上海",
+      "followers": 50,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_6",
+    "type": "普通用户",
+    "label": "用户_6",
+    "attributes": {
+      "age": 24,
+      "gender": "男",
+      "city": "广州",
+      "followers": 60,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_7",
+    "type": "KOL",
+    "label": "用户_7",
+    "attributes": {
+      "age": 25,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 70,
+      "verified": true
+    }
+  },
+  {
+    "id": "U_8",
+    "type": "商家",
+    "label": "用户_8",
+    "attributes": {
+      "age": 26,
+      "gender": "男",
+      "city": "北京",
+      "followers": 80,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_9",
+    "type": "普通用户",
+    "label": "用户_9",
+    "attributes": {
+      "age": 27,
+      "gender": "女",
+      "city": "上海",
+      "followers": 90,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_10",
+    "type": "KOL",
+    "label": "用户_10",
+    "attributes": {
+      "age": 28,
+      "gender": "男",
+      "city": "广州",
+      "followers": 100,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_11",
+    "type": "商家",
+    "label": "用户_11",
+    "attributes": {
+      "age": 29,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 110,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_12",
+    "type": "普通用户",
+    "label": "用户_12",
+    "attributes": {
+      "age": 30,
+      "gender": "男",
+      "city": "北京",
+      "followers": 120,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_13",
+    "type": "KOL",
+    "label": "用户_13",
+    "attributes": {
+      "age": 31,
+      "gender": "女",
+      "city": "上海",
+      "followers": 130,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_14",
+    "type": "商家",
+    "label": "用户_14",
+    "attributes": {
+      "age": 32,
+      "gender": "男",
+      "city": "广州",
+      "followers": 140,
+      "verified": true
+    }
+  },
+  {
+    "id": "U_15",
+    "type": "普通用户",
+    "label": "用户_15",
+    "attributes": {
+      "age": 33,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 150,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_16",
+    "type": "KOL",
+    "label": "用户_16",
+    "attributes": {
+      "age": 34,
+      "gender": "男",
+      "city": "北京",
+      "followers": 160,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_17",
+    "type": "商家",
+    "label": "用户_17",
+    "attributes": {
+      "age": 35,
+      "gender": "女",
+      "city": "上海",
+      "followers": 170,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_18",
+    "type": "普通用户",
+    "label": "用户_18",
+    "attributes": {
+      "age": 36,
+      "gender": "男",
+      "city": "广州",
+      "followers": 180,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_19",
+    "type": "KOL",
+    "label": "用户_19",
+    "attributes": {
+      "age": 37,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 190,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_20",
+    "type": "商家",
+    "label": "用户_20",
+    "attributes": {
+      "age": 38,
+      "gender": "男",
+      "city": "北京",
+      "followers": 200,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_21",
+    "type": "普通用户",
+    "label": "用户_21",
+    "attributes": {
+      "age": 39,
+      "gender": "女",
+      "city": "上海",
+      "followers": 210,
+      "verified": true
+    }
+  },
+  {
+    "id": "U_22",
+    "type": "KOL",
+    "label": "用户_22",
+    "attributes": {
+      "age": 40,
+      "gender": "男",
+      "city": "广州",
+      "followers": 220,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_23",
+    "type": "商家",
+    "label": "用户_23",
+    "attributes": {
+      "age": 41,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 230,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_24",
+    "type": "普通用户",
+    "label": "用户_24",
+    "attributes": {
+      "age": 42,
+      "gender": "男",
+      "city": "北京",
+      "followers": 240,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_25",
+    "type": "KOL",
+    "label": "用户_25",
+    "attributes": {
+      "age": 43,
+      "gender": "女",
+      "city": "上海",
+      "followers": 250,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_26",
+    "type": "商家",
+    "label": "用户_26",
+    "attributes": {
+      "age": 44,
+      "gender": "男",
+      "city": "广州",
+      "followers": 260,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_27",
+    "type": "普通用户",
+    "label": "用户_27",
+    "attributes": {
+      "age": 45,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 270,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_28",
+    "type": "KOL",
+    "label": "用户_28",
+    "attributes": {
+      "age": 46,
+      "gender": "男",
+      "city": "北京",
+      "followers": 280,
+      "verified": true
+    }
+  },
+  {
+    "id": "U_29",
+    "type": "商家",
+    "label": "用户_29",
+    "attributes": {
+      "age": 47,
+      "gender": "女",
+      "city": "上海",
+      "followers": 290,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_30",
+    "type": "普通用户",
+    "label": "用户_30",
+    "attributes": {
+      "age": 48,
+      "gender": "男",
+      "city": "广州",
+      "followers": 300,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_31",
+    "type": "KOL",
+    "label": "用户_31",
+    "attributes": {
+      "age": 49,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 310,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_32",
+    "type": "商家",
+    "label": "用户_32",
+    "attributes": {
+      "age": 50,
+      "gender": "男",
+      "city": "北京",
+      "followers": 320,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_33",
+    "type": "普通用户",
+    "label": "用户_33",
+    "attributes": {
+      "age": 51,
+      "gender": "女",
+      "city": "上海",
+      "followers": 330,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_34",
+    "type": "KOL",
+    "label": "用户_34",
+    "attributes": {
+      "age": 52,
+      "gender": "男",
+      "city": "广州",
+      "followers": 340,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_35",
+    "type": "商家",
+    "label": "用户_35",
+    "attributes": {
+      "age": 53,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 350,
+      "verified": true
+    }
+  },
+  {
+    "id": "U_36",
+    "type": "普通用户",
+    "label": "用户_36",
+    "attributes": {
+      "age": 54,
+      "gender": "男",
+      "city": "北京",
+      "followers": 360,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_37",
+    "type": "KOL",
+    "label": "用户_37",
+    "attributes": {
+      "age": 55,
+      "gender": "女",
+      "city": "上海",
+      "followers": 370,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_38",
+    "type": "商家",
+    "label": "用户_38",
+    "attributes": {
+      "age": 56,
+      "gender": "男",
+      "city": "广州",
+      "followers": 380,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_39",
+    "type": "普通用户",
+    "label": "用户_39",
+    "attributes": {
+      "age": 57,
+      "gender": "女",
+      "city": "深圳",
+      "followers": 390,
+      "verified": false
+    }
+  },
+  {
+    "id": "U_40",
+    "type": "KOL",
+    "label": "用户_40",
+    "attributes": {
+      "age": 58,
+      "gender": "男",
+      "city": "北京",
+      "followers": 400,
+      "verified": false
+    }
+  }
+]

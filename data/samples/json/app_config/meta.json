@@ -1,0 +1,219 @@
+{
+  "data_type": "json",
+  "title": "应用系统配置文件",
+  "description": "某零售SaaS系统的运行时配置，包含数据库连接池、缓存策略、功能开关及日志输出配置。",
+  "schema": {
+    "root_type": "object",
+    "keys": {
+      "app_name": {
+        "type": "string",
+        "description": "应用名称"
+      },
+      "version": {
+        "type": "string",
+        "description": "当前版本号"
+      },
+      "environment": {
+        "type": "categorical",
+        "description": "运行环境",
+        "values": [
+          "development",
+          "staging",
+          "production"
+        ]
+      },
+      "database": {
+        "type": "object",
+        "description": "数据库配置",
+        "keys": {
+          "host": {
+            "type": "string",
+            "description": "数据库主机"
+          },
+          "port": {
+            "type": "integer",
+            "description": "端口"
+          },
+          "name": {
+            "type": "string",
+            "description": "数据库名"
+          },
+          "pool": {
+            "type": "object",
+            "description": "连接池参数",
+            "keys": {
+              "min": {
+                "type": "integer",
+                "description": "最小连接数"
+              },
+              "max": {
+                "type": "integer",
+                "description": "最大连接数"
+              },
+              "timeout_sec": {
+                "type": "numeric",
+                "description": "超时时间",
+                "unit": "秒"
+              }
+            }
+          }
+        }
+      },
+      "cache": {
+        "type": "object",
+        "description": "缓存配置",
+        "keys": {
+          "provider": {
+            "type": "categorical",
+            "description": "缓存提供商",
+            "values": [
+              "redis",
+              "memcached"
+            ]
+          },
+          "host": {
+            "type": "string",
+            "description": "缓存主机"
+          },
+          "port": {
+            "type": "integer",
+            "description": "端口"
+          },
+          "ttl": {
+            "type": "object",
+            "description": "各数据类型的TTL",
+            "keys": {
+              "session": {
+                "type": "integer",
+                "description": "会话缓存时长",
+                "unit": "秒"
+              },
+              "product": {
+                "type": "integer",
+                "description": "商品缓存时长",
+                "unit": "秒"
+              },
+              "order": {
+                "type": "integer",
+                "description": "订单缓存时长",
+                "unit": "秒"
+              }
+            }
+          }
+        }
+      },
+      "features": {
+        "type": "object",
+        "description": "功能模块开关",
+        "keys": {
+          "recommendation": {
+            "type": "object",
+            "description": "推荐系统配置",
+            "keys": {
+              "enabled": {
+                "type": "boolean",
+                "description": "是否启用"
+              },
+              "algorithm": {
+                "type": "categorical",
+                "description": "推荐算法",
+                "values": [
+                  "collaborative_filtering",
+                  "content_based"
+                ]
+              },
+              "params": {
+                "type": "object",
+                "description": "算法参数",
+                "keys": {
+                  "k": {
+                    "type": "integer",
+                    "description": "近邻数量"
+                  },
+                  "similarity": {
+                    "type": "categorical",
+                    "description": "相似度度量",
+                    "values": [
+                      "cosine",
+                      "pearson"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "ab_test": {
+            "type": "object",
+            "description": "AB测试配置",
+            "keys": {
+              "enabled": {
+                "type": "boolean",
+                "description": "是否启用"
+              },
+              "variants": {
+                "type": "array",
+                "description": "实验组列表",
+                "item_schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging": {
+        "type": "object",
+        "description": "日志配置",
+        "keys": {
+          "level": {
+            "type": "categorical",
+            "description": "日志级别",
+            "values": [
+              "DEBUG",
+              "INFO",
+              "WARN",
+              "ERROR"
+            ]
+          },
+          "format": {
+            "type": "categorical",
+            "description": "输出格式",
+            "values": [
+              "json",
+              "text"
+            ]
+          },
+          "outputs": {
+            "type": "array",
+            "description": "日志输出目标",
+            "item_schema": {
+              "type": "object",
+              "keys": {
+                "type": {
+                  "type": "categorical",
+                  "description": "输出类型",
+                  "values": [
+                    "console",
+                    "file"
+                  ]
+                },
+                "path": {
+                  "type": "string",
+                  "description": "文件路径（仅file类型）"
+                },
+                "rotation": {
+                  "type": "categorical",
+                  "description": "轮转策略",
+                  "values": [
+                    "daily",
+                    "hourly"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

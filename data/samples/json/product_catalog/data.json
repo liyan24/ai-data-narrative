@@ -1,0 +1,1274 @@
+[
+  {
+    "sku_id": "SKU_0001",
+    "name": "商品_1",
+    "category": {
+      "level1": "家居",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 150,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 130
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "0.1kg"
+      }
+    ],
+    "reviews": {
+      "count": 2,
+      "avg_rating": 3.8,
+      "tags": [
+        "一般"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_001",
+      "name": "商家_1",
+      "rating": 4.2
+    }
+  },
+  {
+    "sku_id": "SKU_0002",
+    "name": "商品_2",
+    "category": {
+      "level1": "服饰",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 200,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 200
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "0.2kg"
+      }
+    ],
+    "reviews": {
+      "count": 4,
+      "avg_rating": 4.1,
+      "tags": [
+        "差评",
+        "质量差"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_002",
+      "name": "商家_2",
+      "rating": 4.4
+    }
+  },
+  {
+    "sku_id": "SKU_0003",
+    "name": "商品_3",
+    "category": {
+      "level1": "电子",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 250,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 240
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "0.3kg"
+      }
+    ],
+    "reviews": {
+      "count": 6,
+      "avg_rating": 4.4,
+      "tags": [
+        "性价比高"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_003",
+      "name": "商家_3",
+      "rating": 4.6
+    }
+  },
+  {
+    "sku_id": "SKU_0004",
+    "name": "商品_4",
+    "category": {
+      "level1": "家居",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 300,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 280
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "0.4kg"
+      }
+    ],
+    "reviews": {
+      "count": 8,
+      "avg_rating": 4.7,
+      "tags": [
+        "推荐"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_004",
+      "name": "商家_4",
+      "rating": 4.8
+    }
+  },
+  {
+    "sku_id": "SKU_0005",
+    "name": "商品_5",
+    "category": {
+      "level1": "服饰",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 350,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 350
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "0.5kg"
+      }
+    ],
+    "reviews": {
+      "count": 10,
+      "avg_rating": 3.5,
+      "tags": [
+        "好评",
+        "物流快"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_000",
+      "name": "商家_0",
+      "rating": 4.0
+    }
+  },
+  {
+    "sku_id": "SKU_0006",
+    "name": "商品_6",
+    "category": {
+      "level1": "电子",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 400,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 390
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "0.6kg"
+      }
+    ],
+    "reviews": {
+      "count": 12,
+      "avg_rating": 3.8,
+      "tags": [
+        "一般"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_001",
+      "name": "商家_1",
+      "rating": 4.2
+    }
+  },
+  {
+    "sku_id": "SKU_0007",
+    "name": "商品_7",
+    "category": {
+      "level1": "家居",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 450,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 430
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "0.7kg"
+      }
+    ],
+    "reviews": {
+      "count": 14,
+      "avg_rating": 4.1,
+      "tags": [
+        "差评",
+        "质量差"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_002",
+      "name": "商家_2",
+      "rating": 4.4
+    }
+  },
+  {
+    "sku_id": "SKU_0008",
+    "name": "商品_8",
+    "category": {
+      "level1": "服饰",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 500,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 500
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "0.8kg"
+      }
+    ],
+    "reviews": {
+      "count": 16,
+      "avg_rating": 4.4,
+      "tags": [
+        "性价比高"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_003",
+      "name": "商家_3",
+      "rating": 4.6
+    }
+  },
+  {
+    "sku_id": "SKU_0009",
+    "name": "商品_9",
+    "category": {
+      "level1": "电子",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 550,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 540
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "0.9kg"
+      }
+    ],
+    "reviews": {
+      "count": 18,
+      "avg_rating": 4.7,
+      "tags": [
+        "推荐"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_004",
+      "name": "商家_4",
+      "rating": 4.8
+    }
+  },
+  {
+    "sku_id": "SKU_0010",
+    "name": "商品_10",
+    "category": {
+      "level1": "家居",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 600,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 580
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "1.0kg"
+      }
+    ],
+    "reviews": {
+      "count": 20,
+      "avg_rating": 3.5,
+      "tags": [
+        "好评",
+        "物流快"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_000",
+      "name": "商家_0",
+      "rating": 4.0
+    }
+  },
+  {
+    "sku_id": "SKU_0011",
+    "name": "商品_11",
+    "category": {
+      "level1": "服饰",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 650,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 650
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "1.1kg"
+      }
+    ],
+    "reviews": {
+      "count": 22,
+      "avg_rating": 3.8,
+      "tags": [
+        "一般"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_001",
+      "name": "商家_1",
+      "rating": 4.2
+    }
+  },
+  {
+    "sku_id": "SKU_0012",
+    "name": "商品_12",
+    "category": {
+      "level1": "电子",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 700,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 690
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "1.2kg"
+      }
+    ],
+    "reviews": {
+      "count": 24,
+      "avg_rating": 4.1,
+      "tags": [
+        "差评",
+        "质量差"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_002",
+      "name": "商家_2",
+      "rating": 4.4
+    }
+  },
+  {
+    "sku_id": "SKU_0013",
+    "name": "商品_13",
+    "category": {
+      "level1": "家居",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 750,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 730
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "1.3kg"
+      }
+    ],
+    "reviews": {
+      "count": 26,
+      "avg_rating": 4.4,
+      "tags": [
+        "性价比高"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_003",
+      "name": "商家_3",
+      "rating": 4.6
+    }
+  },
+  {
+    "sku_id": "SKU_0014",
+    "name": "商品_14",
+    "category": {
+      "level1": "服饰",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 800,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 800
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "1.4kg"
+      }
+    ],
+    "reviews": {
+      "count": 28,
+      "avg_rating": 4.7,
+      "tags": [
+        "推荐"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_004",
+      "name": "商家_4",
+      "rating": 4.8
+    }
+  },
+  {
+    "sku_id": "SKU_0015",
+    "name": "商品_15",
+    "category": {
+      "level1": "电子",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 850,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 840
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "1.5kg"
+      }
+    ],
+    "reviews": {
+      "count": 30,
+      "avg_rating": 3.5,
+      "tags": [
+        "好评",
+        "物流快"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_000",
+      "name": "商家_0",
+      "rating": 4.0
+    }
+  },
+  {
+    "sku_id": "SKU_0016",
+    "name": "商品_16",
+    "category": {
+      "level1": "家居",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 900,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 880
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "1.6kg"
+      }
+    ],
+    "reviews": {
+      "count": 32,
+      "avg_rating": 3.8,
+      "tags": [
+        "一般"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_001",
+      "name": "商家_1",
+      "rating": 4.2
+    }
+  },
+  {
+    "sku_id": "SKU_0017",
+    "name": "商品_17",
+    "category": {
+      "level1": "服饰",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 950,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 950
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "1.7kg"
+      }
+    ],
+    "reviews": {
+      "count": 34,
+      "avg_rating": 4.1,
+      "tags": [
+        "差评",
+        "质量差"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_002",
+      "name": "商家_2",
+      "rating": 4.4
+    }
+  },
+  {
+    "sku_id": "SKU_0018",
+    "name": "商品_18",
+    "category": {
+      "level1": "电子",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 1000,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 990
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "1.8kg"
+      }
+    ],
+    "reviews": {
+      "count": 36,
+      "avg_rating": 4.4,
+      "tags": [
+        "性价比高"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_003",
+      "name": "商家_3",
+      "rating": 4.6
+    }
+  },
+  {
+    "sku_id": "SKU_0019",
+    "name": "商品_19",
+    "category": {
+      "level1": "家居",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 1050,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 1030
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "1.9kg"
+      }
+    ],
+    "reviews": {
+      "count": 38,
+      "avg_rating": 4.7,
+      "tags": [
+        "推荐"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_004",
+      "name": "商家_4",
+      "rating": 4.8
+    }
+  },
+  {
+    "sku_id": "SKU_0020",
+    "name": "商品_20",
+    "category": {
+      "level1": "服饰",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 1100,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 1100
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "2.0kg"
+      }
+    ],
+    "reviews": {
+      "count": 40,
+      "avg_rating": 3.5,
+      "tags": [
+        "好评",
+        "物流快"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_000",
+      "name": "商家_0",
+      "rating": 4.0
+    }
+  },
+  {
+    "sku_id": "SKU_0021",
+    "name": "商品_21",
+    "category": {
+      "level1": "电子",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 1150,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 1140
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "2.1kg"
+      }
+    ],
+    "reviews": {
+      "count": 42,
+      "avg_rating": 3.8,
+      "tags": [
+        "一般"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_001",
+      "name": "商家_1",
+      "rating": 4.2
+    }
+  },
+  {
+    "sku_id": "SKU_0022",
+    "name": "商品_22",
+    "category": {
+      "level1": "家居",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 1200,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 1180
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "2.2kg"
+      }
+    ],
+    "reviews": {
+      "count": 44,
+      "avg_rating": 4.1,
+      "tags": [
+        "差评",
+        "质量差"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_002",
+      "name": "商家_2",
+      "rating": 4.4
+    }
+  },
+  {
+    "sku_id": "SKU_0023",
+    "name": "商品_23",
+    "category": {
+      "level1": "服饰",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 1250,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 1250
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "2.3kg"
+      }
+    ],
+    "reviews": {
+      "count": 46,
+      "avg_rating": 4.4,
+      "tags": [
+        "性价比高"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_003",
+      "name": "商家_3",
+      "rating": 4.6
+    }
+  },
+  {
+    "sku_id": "SKU_0024",
+    "name": "商品_24",
+    "category": {
+      "level1": "电子",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 1300,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 1290
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "2.4kg"
+      }
+    ],
+    "reviews": {
+      "count": 48,
+      "avg_rating": 4.7,
+      "tags": [
+        "推荐"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_004",
+      "name": "商家_4",
+      "rating": 4.8
+    }
+  },
+  {
+    "sku_id": "SKU_0025",
+    "name": "商品_25",
+    "category": {
+      "level1": "家居",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 1350,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 1330
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "2.5kg"
+      }
+    ],
+    "reviews": {
+      "count": 50,
+      "avg_rating": 3.5,
+      "tags": [
+        "好评",
+        "物流快"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_000",
+      "name": "商家_0",
+      "rating": 4.0
+    }
+  },
+  {
+    "sku_id": "SKU_0026",
+    "name": "商品_26",
+    "category": {
+      "level1": "服饰",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 1400,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 1400
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "2.6kg"
+      }
+    ],
+    "reviews": {
+      "count": 52,
+      "avg_rating": 3.8,
+      "tags": [
+        "一般"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_001",
+      "name": "商家_1",
+      "rating": 4.2
+    }
+  },
+  {
+    "sku_id": "SKU_0027",
+    "name": "商品_27",
+    "category": {
+      "level1": "电子",
+      "level2": "服装"
+    },
+    "pricing": {
+      "base_price": 1450,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 1440
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "2.7kg"
+      }
+    ],
+    "reviews": {
+      "count": 54,
+      "avg_rating": 4.1,
+      "tags": [
+        "差评",
+        "质量差"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_002",
+      "name": "商家_2",
+      "rating": 4.4
+    }
+  },
+  {
+    "sku_id": "SKU_0028",
+    "name": "商品_28",
+    "category": {
+      "level1": "家居",
+      "level2": "手机"
+    },
+    "pricing": {
+      "base_price": 1500,
+      "discount": {
+        "type": "fixed",
+        "value": 20
+      },
+      "final_price": 1480
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "蓝"
+      },
+      {
+        "key": "尺寸",
+        "value": "M"
+      },
+      {
+        "key": "重量",
+        "value": "2.8kg"
+      }
+    ],
+    "reviews": {
+      "count": 56,
+      "avg_rating": 4.4,
+      "tags": [
+        "性价比高"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_003",
+      "name": "商家_3",
+      "rating": 4.6
+    }
+  },
+  {
+    "sku_id": "SKU_0029",
+    "name": "商品_29",
+    "category": {
+      "level1": "服饰",
+      "level2": "电脑"
+    },
+    "pricing": {
+      "base_price": 1550,
+      "discount": {
+        "type": "none",
+        "value": 0
+      },
+      "final_price": 1550
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "黑"
+      },
+      {
+        "key": "尺寸",
+        "value": "L"
+      },
+      {
+        "key": "重量",
+        "value": "2.9kg"
+      }
+    ],
+    "reviews": {
+      "count": 58,
+      "avg_rating": 4.7,
+      "tags": [
+        "推荐"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_004",
+      "name": "商家_4",
+      "rating": 4.8
+    }
+  },
+  {
+    "sku_id": "SKU_0030",
+    "name": "商品_30",
+    "category": {
+      "level1": "电子",
+      "level2": "家具"
+    },
+    "pricing": {
+      "base_price": 1600,
+      "discount": {
+        "type": "percent",
+        "value": 0.1
+      },
+      "final_price": 1590
+    },
+    "attributes": [
+      {
+        "key": "颜色",
+        "value": "红"
+      },
+      {
+        "key": "尺寸",
+        "value": "S"
+      },
+      {
+        "key": "重量",
+        "value": "3.0kg"
+      }
+    ],
+    "reviews": {
+      "count": 60,
+      "avg_rating": 3.5,
+      "tags": [
+        "好评",
+        "物流快"
+      ]
+    },
+    "seller": {
+      "seller_id": "SLR_000",
+      "name": "商家_0",
+      "rating": 4.0
+    }
+  }
+]

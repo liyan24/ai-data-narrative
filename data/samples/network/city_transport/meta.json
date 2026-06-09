@@ -1,0 +1,122 @@
+{
+  "data_type": "network",
+  "title": "城市公共交通网络",
+  "description": "15个交通站点（地铁/公交/枢纽）及轨道连接和换乘关系。",
+  "schema": {
+    "node_types": {
+      "地铁站": {
+        "description": "地铁线路上的站点",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "站点名称"
+          },
+          "lat": {
+            "type": "numeric",
+            "description": "纬度"
+          },
+          "lng": {
+            "type": "numeric",
+            "description": "经度"
+          },
+          "daily_passengers": {
+            "type": "integer",
+            "description": "日均客流量"
+          },
+          "lines": {
+            "type": "array",
+            "description": "经过的线路列表",
+            "item_schema": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "公交站": {
+        "description": "公交线路上的站点",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "站点名称"
+          },
+          "lat": {
+            "type": "numeric",
+            "description": "纬度"
+          },
+          "lng": {
+            "type": "numeric",
+            "description": "经度"
+          },
+          "daily_passengers": {
+            "type": "integer",
+            "description": "日均客流量"
+          },
+          "lines": {
+            "type": "array",
+            "description": "经过的线路列表",
+            "item_schema": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "枢纽站": {
+        "description": "多种交通方式交汇的枢纽",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "description": "站点名称"
+          },
+          "lat": {
+            "type": "numeric",
+            "description": "纬度"
+          },
+          "lng": {
+            "type": "numeric",
+            "description": "经度"
+          },
+          "daily_passengers": {
+            "type": "integer",
+            "description": "日均客流量"
+          },
+          "lines": {
+            "type": "array",
+            "description": "经过的线路列表",
+            "item_schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "edge_types": {
+      "轨道": {
+        "description": "轨道线路上的直接连接",
+        "directed": false,
+        "properties": {
+          "distance_km": {
+            "type": "numeric",
+            "description": "站间距",
+            "unit": "km"
+          },
+          "travel_time_min": {
+            "type": "integer",
+            "description": "行驶时间",
+            "unit": "分钟"
+          }
+        }
+      },
+      "换乘": {
+        "description": "不同线路间的换乘通道",
+        "directed": false,
+        "properties": {
+          "walk_time_min": {
+            "type": "integer",
+            "description": "步行换乘时间",
+            "unit": "分钟"
+          }
+        }
+      }
+    }
+  }
+}

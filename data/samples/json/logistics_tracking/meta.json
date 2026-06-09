@@ -1,0 +1,164 @@
+{
+  "data_type": "json",
+  "title": "快递物流全程轨迹",
+  "description": "20个快递运单的完整物流轨迹，包含寄收件人信息、商品明细及按时间排序的节点追踪记录。",
+  "schema": {
+    "root_type": "array",
+    "item_meaning": "每一个快递运单",
+    "keys": {
+      "waybill_no": {
+        "type": "string",
+        "description": "运单号",
+        "role": "primary_key"
+      },
+      "carrier": {
+        "type": "categorical",
+        "description": "承运快递公司",
+        "values": [
+          "顺丰",
+          "中通",
+          "圆通",
+          "韵达",
+          "申通"
+        ]
+      },
+      "sender": {
+        "type": "object",
+        "description": "寄件人信息",
+        "keys": {
+          "name": {
+            "type": "string",
+            "description": "姓名"
+          },
+          "phone": {
+            "type": "string",
+            "description": "手机号"
+          },
+          "address": {
+            "type": "object",
+            "description": "地址",
+            "keys": {
+              "province": {
+                "type": "string",
+                "description": "省"
+              },
+              "city": {
+                "type": "string",
+                "description": "市"
+              },
+              "detail": {
+                "type": "string",
+                "description": "详细地址"
+              }
+            }
+          }
+        }
+      },
+      "receiver": {
+        "type": "object",
+        "description": "收件人信息",
+        "keys": {
+          "name": {
+            "type": "string",
+            "description": "姓名"
+          },
+          "phone": {
+            "type": "string",
+            "description": "手机号"
+          },
+          "address": {
+            "type": "object",
+            "description": "地址",
+            "keys": {
+              "province": {
+                "type": "string",
+                "description": "省"
+              },
+              "city": {
+                "type": "string",
+                "description": "市"
+              },
+              "detail": {
+                "type": "string",
+                "description": "详细地址"
+              }
+            }
+          }
+        }
+      },
+      "items": {
+        "type": "array",
+        "description": "商品明细",
+        "item_schema": {
+          "type": "object",
+          "keys": {
+            "name": {
+              "type": "string",
+              "description": "商品名"
+            },
+            "quantity": {
+              "type": "integer",
+              "description": "数量"
+            },
+            "weight_kg": {
+              "type": "numeric",
+              "description": "重量",
+              "unit": "kg"
+            }
+          }
+        }
+      },
+      "tracking_nodes": {
+        "type": "array",
+        "description": "物流节点轨迹",
+        "item_schema": {
+          "type": "object",
+          "keys": {
+            "node": {
+              "type": "string",
+              "description": "节点名称"
+            },
+            "time": {
+              "type": "datetime",
+              "description": "到达时间",
+              "format": "ISO8601"
+            },
+            "location": {
+              "type": "object",
+              "description": "节点地理位置",
+              "keys": {
+                "province": {
+                  "type": "string",
+                  "description": "省"
+                },
+                "city": {
+                  "type": "string",
+                  "description": "市"
+                },
+                "lat": {
+                  "type": "numeric",
+                  "description": "纬度"
+                },
+                "lng": {
+                  "type": "numeric",
+                  "description": "经度"
+                }
+              }
+            },
+            "status": {
+              "type": "categorical",
+              "description": "物流状态",
+              "values": [
+                "已揽收",
+                "运输中",
+                "到达分拨",
+                "派送中",
+                "已签收"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

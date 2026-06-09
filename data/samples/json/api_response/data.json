@@ -1,0 +1,191 @@
+{
+  "status": "success",
+  "pagination": {
+    "page": 1,
+    "page_size": 10,
+    "total": 50,
+    "total_pages": 5
+  },
+  "data": [
+    {
+      "id": 1,
+      "title": "文章_1",
+      "author": {
+        "id": 1,
+        "name": "作者_1",
+        "level": "中级"
+      },
+      "tags": [
+        "标签_1",
+        "标签_2"
+      ],
+      "metrics": {
+        "views": 100,
+        "likes": 10,
+        "comments": 2
+      }
+    },
+    {
+      "id": 2,
+      "title": "文章_2",
+      "author": {
+        "id": 2,
+        "name": "作者_2",
+        "level": "高级"
+      },
+      "tags": [
+        "标签_2",
+        "标签_3"
+      ],
+      "metrics": {
+        "views": 200,
+        "likes": 20,
+        "comments": 4
+      }
+    },
+    {
+      "id": 3,
+      "title": "文章_3",
+      "author": {
+        "id": 3,
+        "name": "作者_3",
+        "level": "初级"
+      },
+      "tags": [
+        "标签_3",
+        "标签_4"
+      ],
+      "metrics": {
+        "views": 300,
+        "likes": 30,
+        "comments": 6
+      }
+    },
+    {
+      "id": 4,
+      "title": "文章_4",
+      "author": {
+        "id": 4,
+        "name": "作者_4",
+        "level": "中级"
+      },
+      "tags": [
+        "标签_4",
+        "标签_0"
+      ],
+      "metrics": {
+        "views": 400,
+        "likes": 40,
+        "comments": 8
+      }
+    },
+    {
+      "id": 5,
+      "title": "文章_5",
+      "author": {
+        "id": 0,
+        "name": "作者_0",
+        "level": "高级"
+      },
+      "tags": [
+        "标签_0",
+        "标签_1"
+      ],
+      "metrics": {
+        "views": 500,
+        "likes": 50,
+        "comments": 10
+      }
+    },
+    {
+      "id": 6,
+      "title": "文章_6",
+      "author": {
+        "id": 1,
+        "name": "作者_1",
+        "level": "初级"
+      },
+      "tags": [
+        "标签_1",
+        "标签_2"
+      ],
+      "metrics": {
+        "views": 600,
+        "likes": 60,
+        "comments": 12
+      }
+    },
+    {
+      "id": 7,
+      "title": "文章_7",
+      "author": {
+        "id": 2,
+        "name": "作者_2",
+        "level": "中级"
+      },
+      "tags": [
+        "标签_2",
+        "标签_3"
+      ],
+      "metrics": {
+        "views": 700,
+        "likes": 70,
+        "comments": 14
+      }
+    },
+    {
+      "id": 8,
+      "title": "文章_8",
+      "author": {
+        "id": 3,
+        "name": "作者_3",
+        "level": "高级"
+      },
+      "tags": [
+        "标签_3",
+        "标签_4"
+      ],
+      "metrics": {
+        "views": 800,
+        "likes": 80,
+        "comments": 16
+      }
+    },
+    {
+      "id": 9,
+      "title": "文章_9",
+      "author": {
+        "id": 4,
+        "name": "作者_4",
+        "level": "初级"
+      },
+      "tags": [
+        "标签_4",
+        "标签_0"
+      ],
+      "metrics": {
+        "views": 900,
+        "likes": 90,
+        "comments": 18
+      }
+    },
+    {
+      "id": 10,
+      "title": "文章_10",
+      "author": {
+        "id": 0,
+        "name": "作者_0",
+        "level": "中级"
+      },
+      "tags": [
+        "标签_0",
+        "标签_1"
+      ],
+      "metrics": {
+        "views": 1000,
+        "likes": 100,
+        "comments": 20
+      }
+    }
+  ]
+}

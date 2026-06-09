@@ -1,0 +1,113 @@
+{
+  "data_type": "table",
+  "title": "企业员工人事档案",
+  "description": "某公司100名员工的完整人事信息，涵盖基础属性、岗位信息及薪酬绩效。",
+  "schema": {
+    "row_meaning": "每位在职或已离职的员工",
+    "column_meaning": "员工的各项人事属性",
+    "columns": [
+      {
+        "name": "员工编号",
+        "description": "公司内唯一标识",
+        "type": "string",
+        "role": "primary_key",
+        "example": "EMP_0001"
+      },
+      {
+        "name": "姓名",
+        "description": "员工中文名",
+        "type": "string",
+        "role": "label"
+      },
+      {
+        "name": "性别",
+        "description": "生理性别",
+        "type": "categorical",
+        "values": [
+          "男",
+          "女"
+        ]
+      },
+      {
+        "name": "年龄",
+        "description": "当前周岁",
+        "type": "integer",
+        "unit": "岁",
+        "range": [
+          22,
+          62
+        ]
+      },
+      {
+        "name": "部门",
+        "description": "所属一级部门",
+        "type": "categorical",
+        "values": [
+          "技术部",
+          "销售部",
+          "市场部",
+          "财务部",
+          "人事部"
+        ]
+      },
+      {
+        "name": "职位",
+        "description": "岗位职级",
+        "type": "categorical",
+        "values": [
+          "工程师",
+          "经理",
+          "主管",
+          "专员",
+          "总监"
+        ]
+      },
+      {
+        "name": "学历",
+        "description": "最高学历",
+        "type": "categorical",
+        "values": [
+          "本科",
+          "硕士",
+          "博士"
+        ]
+      },
+      {
+        "name": "入职年份",
+        "description": "首次加入公司年份",
+        "type": "integer",
+        "unit": "年"
+      },
+      {
+        "name": "月薪",
+        "description": "税前固定月薪",
+        "type": "numeric",
+        "unit": "元",
+        "aggregation": "avg",
+        "statistics": {
+          "min": 8000,
+          "max": 18000
+        }
+      },
+      {
+        "name": "绩效评分",
+        "description": "最近年度绩效考核得分",
+        "type": "integer",
+        "unit": "分",
+        "range": [
+          60,
+          100
+        ]
+      },
+      {
+        "name": "是否在职",
+        "description": "当前劳动关系状态",
+        "type": "boolean",
+        "values": [
+          true,
+          false
+        ]
+      }
+    ]
+  }
+}

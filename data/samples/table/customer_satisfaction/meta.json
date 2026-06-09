@@ -1,0 +1,93 @@
+{
+  "data_type": "table",
+  "title": "客户满意度问卷",
+  "description": "200名客户对5个服务维度的满意度评分及客户属性信息。",
+  "schema": {
+    "row_meaning": "每一位参与调研的客户",
+    "column_meaning": "客户对各维度的满意度评分及属性",
+    "columns": [
+      {
+        "name": "客户ID",
+        "description": "客户唯一标识",
+        "type": "string",
+        "role": "primary_key"
+      },
+      {
+        "name": "服务态度评分",
+        "description": "对客服态度的满意程度",
+        "type": "integer",
+        "unit": "分(1-5)",
+        "range": [
+          1,
+          5
+        ]
+      },
+      {
+        "name": "产品质量评分",
+        "description": "对收到商品质量的满意程度",
+        "type": "integer",
+        "unit": "分(1-5)",
+        "range": [
+          1,
+          5
+        ]
+      },
+      {
+        "name": "物流速度评分",
+        "description": "对配送速度的满意程度",
+        "type": "integer",
+        "unit": "分(1-5)",
+        "range": [
+          1,
+          5
+        ]
+      },
+      {
+        "name": "售后支持评分",
+        "description": "对售后处理效率的满意程度",
+        "type": "integer",
+        "unit": "分(1-5)",
+        "range": [
+          1,
+          5
+        ]
+      },
+      {
+        "name": "整体满意度",
+        "description": "对本次购物的综合满意度",
+        "type": "integer",
+        "unit": "分(1-5)",
+        "range": [
+          1,
+          5
+        ]
+      },
+      {
+        "name": "是否推荐",
+        "description": "是否愿意向他人推荐",
+        "type": "categorical",
+        "values": [
+          "是",
+          "否"
+        ]
+      },
+      {
+        "name": "会员等级",
+        "description": "当前会员级别",
+        "type": "categorical",
+        "values": [
+          "普通",
+          "银牌",
+          "金牌",
+          "钻石"
+        ]
+      },
+      {
+        "name": "注册时长",
+        "description": "自注册以来的月数",
+        "type": "integer",
+        "unit": "月"
+      }
+    ]
+  }
+}

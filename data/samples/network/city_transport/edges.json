@@ -1,0 +1,177 @@
+[
+  {
+    "source": "ST_1",
+    "target": "ST_2",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 2,
+      "travel_time_min": 3
+    }
+  },
+  {
+    "source": "ST_2",
+    "target": "ST_3",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 3,
+      "travel_time_min": 4
+    }
+  },
+  {
+    "source": "ST_3",
+    "target": "ST_4",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 4,
+      "travel_time_min": 5
+    }
+  },
+  {
+    "source": "ST_3",
+    "target": "ST_7",
+    "type": "换乘",
+    "properties": {
+      "walk_time_min": 6
+    }
+  },
+  {
+    "source": "ST_4",
+    "target": "ST_5",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 5,
+      "travel_time_min": 6
+    }
+  },
+  {
+    "source": "ST_5",
+    "target": "ST_6",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 1,
+      "travel_time_min": 2
+    }
+  },
+  {
+    "source": "ST_6",
+    "target": "ST_7",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 2,
+      "travel_time_min": 3
+    }
+  },
+  {
+    "source": "ST_6",
+    "target": "ST_10",
+    "type": "换乘",
+    "properties": {
+      "walk_time_min": 4
+    }
+  },
+  {
+    "source": "ST_7",
+    "target": "ST_8",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 3,
+      "travel_time_min": 4
+    }
+  },
+  {
+    "source": "ST_8",
+    "target": "ST_9",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 4,
+      "travel_time_min": 5
+    }
+  },
+  {
+    "source": "ST_9",
+    "target": "ST_10",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 5,
+      "travel_time_min": 6
+    }
+  },
+  {
+    "source": "ST_9",
+    "target": "ST_13",
+    "type": "换乘",
+    "properties": {
+      "walk_time_min": 7
+    }
+  },
+  {
+    "source": "ST_10",
+    "target": "ST_11",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 1,
+      "travel_time_min": 2
+    }
+  },
+  {
+    "source": "ST_11",
+    "target": "ST_12",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 2,
+      "travel_time_min": 3
+    }
+  },
+  {
+    "source": "ST_12",
+    "target": "ST_13",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 3,
+      "travel_time_min": 4
+    }
+  },
+  {
+    "source": "ST_12",
+    "target": "ST_1",
+    "type": "换乘",
+    "properties": {
+      "walk_time_min": 5
+    }
+  },
+  {
+    "source": "ST_13",
+    "target": "ST_14",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 4,
+      "travel_time_min": 5
+    }
+  },
+  {
+    "source": "ST_14",
+    "target": "ST_15",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 5,
+      "travel_time_min": 6
+    }
+  },
+  {
+    "source": "ST_15",
+    "target": "ST_1",
+    "type": "轨道",
+    "properties": {
+      "distance_km": 1,
+      "travel_time_min": 2
+    }
+  },
+  {
+    "source": "ST_15",
+    "target": "ST_4",
+    "type": "换乘",
+    "properties": {
+      "walk_time_min": 3
+    }
+  }
+]

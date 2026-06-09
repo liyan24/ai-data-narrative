@@ -1,0 +1,92 @@
+{
+  "data_type": "table",
+  "title": "电商平台订单明细",
+  "description": "某电商平台150个订单的交易信息、商品分类、支付与物流状态。",
+  "schema": {
+    "row_meaning": "每一个独立订单",
+    "column_meaning": "订单的交易信息、商品与物流状态",
+    "columns": [
+      {
+        "name": "订单号",
+        "description": "平台唯一订单编号",
+        "type": "string",
+        "role": "primary_key"
+      },
+      {
+        "name": "下单时间",
+        "description": "用户提交订单的时间",
+        "type": "datetime",
+        "format": "YYYY-MM-DD HH:MM"
+      },
+      {
+        "name": "用户ID",
+        "description": "下单用户标识",
+        "type": "string"
+      },
+      {
+        "name": "商品类别",
+        "description": "订单主商品的类目",
+        "type": "categorical",
+        "values": [
+          "数码",
+          "服饰",
+          "食品",
+          "家居",
+          "美妆"
+        ]
+      },
+      {
+        "name": "订单金额",
+        "description": "实付金额（含优惠后）",
+        "type": "numeric",
+        "unit": "元",
+        "aggregation": "sum"
+      },
+      {
+        "name": "支付方式",
+        "description": "用户选择的支付渠道",
+        "type": "categorical",
+        "values": [
+          "支付宝",
+          "微信支付",
+          "信用卡",
+          "花呗",
+          "货到付款"
+        ]
+      },
+      {
+        "name": "物流状态",
+        "description": "当前订单物流进度",
+        "type": "categorical",
+        "values": [
+          "已签收",
+          "运输中",
+          "待发货",
+          "已取消",
+          "退货中"
+        ]
+      },
+      {
+        "name": "是否优惠券",
+        "description": "是否使用了平台优惠券",
+        "type": "categorical",
+        "values": [
+          "是",
+          "否"
+        ]
+      },
+      {
+        "name": "收货城市",
+        "description": "订单配送目的地城市",
+        "type": "categorical",
+        "values": [
+          "北京",
+          "上海",
+          "广州",
+          "深圳",
+          "杭州"
+        ]
+      }
+    ]
+  }
+}
